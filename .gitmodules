@@ -1,0 +1,6 @@
+[submodule "WAVLab_CEC2_demo"]
+	path = WAVLab_CEC2_demo
+	url = https://github.com/popcornell/WAVLab_CEC2_demo.git
+[submodule "demos/WAVLab_CEC2_demo"]
+	path = demos/WAVLab_CEC2_demo
+	url = https://github.com/popcornell/WAVLab_CEC2_demo.git
