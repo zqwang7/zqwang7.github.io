@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 align="center"><strong>Sound Demo of Cross-Talk Reduction on CHiME-7</strong></h1>
+<br>
+<p>This webpage provides a sound demo for the following paper:</p><blockquote>Z.-Q. Wang, A. Kumar, and S. Watanabe, "Cross-Talk Reduction", in <i>International Joint Conferences on Artificial Intelligence (<strong>IJCAI</strong>)</i>, 2024.</blockquote>
+<br>
+This demo presents the results of CTRnet on the close-talk mixtures of CHiME-7, which exhibit severe cross-talk.
+<br>
+Note that the provided wavefiles are the segmented short utterances used for ASR decoding. That is: 
+<br>
+&emsp; &#8226; For CTRnet, after we obtain the separated signal (with the same length as the recording session) of each speaker, we use oracle speaker timestamps to cut the long signal to individual short utternaces (which are fed to ASR models for decoding). It corresponds to row 3 of Table 2 in the paper.
+<br>
+&emsp; &#8226; For GSS, it first splits long mixtures to short utterances, then augments each utterance with abundant left and right context, and finally apply guided spatial clustering and beamforming for separation. It corresponds to row 4 of Table 2 in the paper.
+<br>
+<br>
+<hr color="#0ABAB5"; size="5">
+<table style="width:80%">
+<tr>
+    <tr>
+    <td>Utterance ID = S21-P48-776376_777082</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S21-P48-776376_777082.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S21-P48-776376_777082.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S21-P48-776376_777082.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S21-P48-776376_777082.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S21-P48-776376_777082.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S21-P48-776376_777082.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S01-P04-819770_820264</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S01-P04-819770_820264.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S01-P04-819770_820264.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S01-P04-819770_820264.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S01-P04-819770_820264.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S01-P04-819770_820264.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S01-P04-819770_820264.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S01-P01-786906_787403</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S01-P01-786906_787403.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S01-P01-786906_787403.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S01-P01-786906_787403.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S01-P01-786906_787403.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S01-P01-786906_787403.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S01-P01-786906_787403.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S01-P02-942311_943384</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S01-P02-942311_943384.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S01-P02-942311_943384.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S01-P02-942311_943384.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S01-P02-942311_943384.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S01-P02-942311_943384.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S01-P02-942311_943384.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S20-P50-382760_383432</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S20-P50-382760_383432.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S20-P50-382760_383432.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S20-P50-382760_383432.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S20-P50-382760_383432.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S20-P50-382760_383432.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S20-P50-382760_383432.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S01-P01-700345_700777</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S01-P01-700345_700777.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S01-P01-700345_700777.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S01-P01-700345_700777.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S01-P01-700345_700777.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S01-P01-700345_700777.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S01-P01-700345_700777.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S01-P01-811883_812404</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S01-P01-811883_812404.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S01-P01-811883_812404.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S01-P01-811883_812404.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S01-P01-811883_812404.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S01-P01-811883_812404.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S01-P01-811883_812404.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S19-P49-488504_489128</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S19-P49-488504_489128.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S19-P49-488504_489128.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S19-P49-488504_489128.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S19-P49-488504_489128.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S19-P49-488504_489128.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S19-P49-488504_489128.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S21-P46-390873_391316</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S21-P46-390873_391316.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S21-P46-390873_391316.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S21-P46-390873_391316.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S21-P46-390873_391316.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S21-P46-390873_391316.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S21-P46-390873_391316.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S19-P51-812763_813279</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S19-P51-812763_813279.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S19-P51-812763_813279.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S19-P51-812763_813279.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S19-P51-812763_813279.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S19-P51-812763_813279.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S19-P51-812763_813279.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S01-P03-158380_159040</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S01-P03-158380_159040.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S01-P03-158380_159040.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S01-P03-158380_159040.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S01-P03-158380_159040.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S01-P03-158380_159040.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S01-P03-158380_159040.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S21-P46-575737_576977</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S21-P46-575737_576977.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S21-P46-575737_576977.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S21-P46-575737_576977.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S21-P46-575737_576977.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S21-P46-575737_576977.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S21-P46-575737_576977.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S21-P47-278934_279956</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S21-P47-278934_279956.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S21-P47-278934_279956.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S21-P47-278934_279956.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S21-P47-278934_279956.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S21-P47-278934_279956.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S21-P47-278934_279956.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S19-P52-772311_772719</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S19-P52-772311_772719.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S19-P52-772311_772719.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S19-P52-772311_772719.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S19-P52-772311_772719.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S19-P52-772311_772719.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S19-P52-772311_772719.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S19-P52-137782_138266</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S19-P52-137782_138266.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S19-P52-137782_138266.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S19-P52-137782_138266.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S19-P52-137782_138266.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S19-P52-137782_138266.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S19-P52-137782_138266.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S21-P46-483436_483959</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S21-P46-483436_483959.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S21-P46-483436_483959.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S21-P46-483436_483959.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S21-P46-483436_483959.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S21-P46-483436_483959.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S21-P46-483436_483959.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S01-P02-868324_868751</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S01-P02-868324_868751.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S01-P02-868324_868751.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S01-P02-868324_868751.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S01-P02-868324_868751.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S01-P02-868324_868751.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S01-P02-868324_868751.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S01-P03-692316_692792</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S01-P03-692316_692792.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S01-P03-692316_692792.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S01-P03-692316_692792.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S01-P03-692316_692792.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S01-P03-692316_692792.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S01-P03-692316_692792.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S01-P04-658210_658742</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S01-P04-658210_658742.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S01-P04-658210_658742.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S01-P04-658210_658742.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S01-P04-658210_658742.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S01-P04-658210_658742.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S01-P04-658210_658742.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S01-P02-792194_792701</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S01-P02-792194_792701.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S01-P02-792194_792701.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S01-P02-792194_792701.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S01-P02-792194_792701.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S01-P02-792194_792701.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S01-P02-792194_792701.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S01-P04-939074_939543</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S01-P04-939074_939543.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S01-P04-939074_939543.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S01-P04-939074_939543.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S01-P04-939074_939543.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S01-P04-939074_939543.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S01-P04-939074_939543.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S21-P47-242559_243544</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S21-P47-242559_243544.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S21-P47-242559_243544.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S21-P47-242559_243544.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S21-P47-242559_243544.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S21-P47-242559_243544.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S21-P47-242559_243544.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+    <tr>
+    <td>Utterance ID = S19-P51-083779_084747</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+</tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//Mixture//S19-P51-083779_084747.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//Mixture//S19-P51-083779_084747.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//GSS//S19-P51-083779_084747.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//GSS//S19-P51-083779_084747.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>CTRnet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CTRnet//S19-P51-083779_084747.flac" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CTRnet//S19-P51-083779_084747.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</table>
+</body>
+</html>
