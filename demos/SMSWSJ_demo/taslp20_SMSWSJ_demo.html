@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 align="center"><strong>Sound Demo on SMS-WSJ Corpus</strong></h1>
+<br>
+<p>This webpage provides a sound demo on the test set of the SMS-WSJ corpus. For technical details, please refer to the following paper:</p><blockquote>Z.-Q. Wang, P. Wang, and D.L. Wang, "<i>Multi-Microphone Complex Spectral Mapping for Utterance-Wise and Continuous Speaker Separation</i>", in submission, 2020.</blockquote>
+<br>
+This demo presents the separation results of 10 randomly-selected test signals. We consider all the six channels for multi-channel processing. Firefox is recommended.
+<br>
+<br>
+<br>
+<table style="width:60%">
+<tr>
+    <tr>
+    <td>Utterance ID</td>
+    <td><font size="+1"> 545_446c040j_447c0410</font></td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/Mixture//545_446c040j_447c0410_0.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>SISO<sub>1</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/SISO1//545_446c040j_447c0410_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/SISO1//545_446c040j_447c0410_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1//545_446c040j_447c0410_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1//545_446c040j_447c0410_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-BF-MISO<sub>2</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO2//545_446c040j_447c0410_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO2//545_446c040j_447c0410_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-BF-MISO<sub>3</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO3//545_446c040j_447c0410_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO3//545_446c040j_447c0410_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-MISO<sub>4</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO4//545_446c040j_447c0410_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO4//545_446c040j_447c0410_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-MISO<sub>5</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO5//545_446c040j_447c0410_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO5//545_446c040j_447c0410_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>DPRNN-TasNet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DPRNN//545_446c040j_447c0410_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DPRNN//545_446c040j_447c0410_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>FaSNet with TAC</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/FaSNet//545_446c040j_447c0410_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/FaSNet//545_446c040j_447c0410_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MC-ConvTasNet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MC-ConvTasNet//545_446c040j_447c0410_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MC-ConvTasNet//545_446c040j_447c0410_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>Direct Sound</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DirectSound//545_446c040j_447c0410_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DirectSound//545_446c040j_447c0410_1.wav" controls></audio></td>
+    </tr>
+    <td>-------------------------------</td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID</td>
+    <td><font size="+1"> 879_440c040l_445c040b</font></td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/Mixture//879_440c040l_445c040b_0.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>SISO<sub>1</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/SISO1//879_440c040l_445c040b_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/SISO1//879_440c040l_445c040b_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1//879_440c040l_445c040b_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1//879_440c040l_445c040b_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-BF-MISO<sub>2</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO2//879_440c040l_445c040b_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO2//879_440c040l_445c040b_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-BF-MISO<sub>3</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO3//879_440c040l_445c040b_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO3//879_440c040l_445c040b_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-MISO<sub>4</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO4//879_440c040l_445c040b_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO4//879_440c040l_445c040b_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-MISO<sub>5</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO5//879_440c040l_445c040b_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO5//879_440c040l_445c040b_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>DPRNN-TasNet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DPRNN//879_440c040l_445c040b_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DPRNN//879_440c040l_445c040b_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>FaSNet with TAC</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/FaSNet//879_440c040l_445c040b_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/FaSNet//879_440c040l_445c040b_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MC-ConvTasNet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MC-ConvTasNet//879_440c040l_445c040b_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MC-ConvTasNet//879_440c040l_445c040b_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>Direct Sound</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DirectSound//879_440c040l_445c040b_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DirectSound//879_440c040l_445c040b_1.wav" controls></audio></td>
+    </tr>
+    <td>-------------------------------</td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID</td>
+    <td><font size="+1"> 1120_445c040c_441c040m</font></td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/Mixture//1120_445c040c_441c040m_0.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>SISO<sub>1</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/SISO1//1120_445c040c_441c040m_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/SISO1//1120_445c040c_441c040m_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1//1120_445c040c_441c040m_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1//1120_445c040c_441c040m_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-BF-MISO<sub>2</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO2//1120_445c040c_441c040m_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO2//1120_445c040c_441c040m_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-BF-MISO<sub>3</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO3//1120_445c040c_441c040m_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO3//1120_445c040c_441c040m_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-MISO<sub>4</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO4//1120_445c040c_441c040m_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO4//1120_445c040c_441c040m_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-MISO<sub>5</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO5//1120_445c040c_441c040m_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO5//1120_445c040c_441c040m_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>DPRNN-TasNet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DPRNN//1120_445c040c_441c040m_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DPRNN//1120_445c040c_441c040m_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>FaSNet with TAC</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/FaSNet//1120_445c040c_441c040m_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/FaSNet//1120_445c040c_441c040m_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MC-ConvTasNet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MC-ConvTasNet//1120_445c040c_441c040m_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MC-ConvTasNet//1120_445c040c_441c040m_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>Direct Sound</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DirectSound//1120_445c040c_441c040m_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DirectSound//1120_445c040c_441c040m_1.wav" controls></audio></td>
+    </tr>
+    <td>-------------------------------</td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID</td>
+    <td><font size="+1"> 20_446c040v_441c040q</font></td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/Mixture//20_446c040v_441c040q_0.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>SISO<sub>1</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/SISO1//20_446c040v_441c040q_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/SISO1//20_446c040v_441c040q_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1//20_446c040v_441c040q_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1//20_446c040v_441c040q_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-BF-MISO<sub>2</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO2//20_446c040v_441c040q_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO2//20_446c040v_441c040q_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-BF-MISO<sub>3</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO3//20_446c040v_441c040q_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO3//20_446c040v_441c040q_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-MISO<sub>4</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO4//20_446c040v_441c040q_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO4//20_446c040v_441c040q_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-MISO<sub>5</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO5//20_446c040v_441c040q_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO5//20_446c040v_441c040q_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>DPRNN-TasNet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DPRNN//20_446c040v_441c040q_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DPRNN//20_446c040v_441c040q_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>FaSNet with TAC</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/FaSNet//20_446c040v_441c040q_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/FaSNet//20_446c040v_441c040q_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MC-ConvTasNet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MC-ConvTasNet//20_446c040v_441c040q_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MC-ConvTasNet//20_446c040v_441c040q_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>Direct Sound</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DirectSound//20_446c040v_441c040q_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DirectSound//20_446c040v_441c040q_1.wav" controls></audio></td>
+    </tr>
+    <td>-------------------------------</td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID</td>
+    <td><font size="+1"> 1295_447c040d_442c040r</font></td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/Mixture//1295_447c040d_442c040r_0.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>SISO<sub>1</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/SISO1//1295_447c040d_442c040r_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/SISO1//1295_447c040d_442c040r_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1//1295_447c040d_442c040r_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1//1295_447c040d_442c040r_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-BF-MISO<sub>2</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO2//1295_447c040d_442c040r_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO2//1295_447c040d_442c040r_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-BF-MISO<sub>3</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO3//1295_447c040d_442c040r_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO3//1295_447c040d_442c040r_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-MISO<sub>4</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO4//1295_447c040d_442c040r_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO4//1295_447c040d_442c040r_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-MISO<sub>5</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO5//1295_447c040d_442c040r_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO5//1295_447c040d_442c040r_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>DPRNN-TasNet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DPRNN//1295_447c040d_442c040r_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DPRNN//1295_447c040d_442c040r_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>FaSNet with TAC</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/FaSNet//1295_447c040d_442c040r_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/FaSNet//1295_447c040d_442c040r_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MC-ConvTasNet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MC-ConvTasNet//1295_447c040d_442c040r_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MC-ConvTasNet//1295_447c040d_442c040r_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>Direct Sound</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DirectSound//1295_447c040d_442c040r_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DirectSound//1295_447c040d_442c040r_1.wav" controls></audio></td>
+    </tr>
+    <td>-------------------------------</td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID</td>
+    <td><font size="+1"> 1066_445c0407_444c040k</font></td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/Mixture//1066_445c0407_444c040k_0.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>SISO<sub>1</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/SISO1//1066_445c0407_444c040k_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/SISO1//1066_445c0407_444c040k_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1//1066_445c0407_444c040k_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1//1066_445c0407_444c040k_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-BF-MISO<sub>2</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO2//1066_445c0407_444c040k_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO2//1066_445c0407_444c040k_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-BF-MISO<sub>3</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO3//1066_445c0407_444c040k_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO3//1066_445c0407_444c040k_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-MISO<sub>4</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO4//1066_445c0407_444c040k_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO4//1066_445c0407_444c040k_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-MISO<sub>5</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO5//1066_445c0407_444c040k_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO5//1066_445c0407_444c040k_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>DPRNN-TasNet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DPRNN//1066_445c0407_444c040k_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DPRNN//1066_445c0407_444c040k_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>FaSNet with TAC</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/FaSNet//1066_445c0407_444c040k_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/FaSNet//1066_445c0407_444c040k_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MC-ConvTasNet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MC-ConvTasNet//1066_445c0407_444c040k_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MC-ConvTasNet//1066_445c0407_444c040k_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>Direct Sound</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DirectSound//1066_445c0407_444c040k_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DirectSound//1066_445c0407_444c040k_1.wav" controls></audio></td>
+    </tr>
+    <td>-------------------------------</td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID</td>
+    <td><font size="+1"> 39_443c040s_444c040o</font></td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/Mixture//39_443c040s_444c040o_0.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>SISO<sub>1</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/SISO1//39_443c040s_444c040o_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/SISO1//39_443c040s_444c040o_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1//39_443c040s_444c040o_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1//39_443c040s_444c040o_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-BF-MISO<sub>2</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO2//39_443c040s_444c040o_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO2//39_443c040s_444c040o_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-BF-MISO<sub>3</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO3//39_443c040s_444c040o_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO3//39_443c040s_444c040o_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-MISO<sub>4</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO4//39_443c040s_444c040o_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO4//39_443c040s_444c040o_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-MISO<sub>5</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO5//39_443c040s_444c040o_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO5//39_443c040s_444c040o_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>DPRNN-TasNet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DPRNN//39_443c040s_444c040o_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DPRNN//39_443c040s_444c040o_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>FaSNet with TAC</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/FaSNet//39_443c040s_444c040o_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/FaSNet//39_443c040s_444c040o_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MC-ConvTasNet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MC-ConvTasNet//39_443c040s_444c040o_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MC-ConvTasNet//39_443c040s_444c040o_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>Direct Sound</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DirectSound//39_443c040s_444c040o_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DirectSound//39_443c040s_444c040o_1.wav" controls></audio></td>
+    </tr>
+    <td>-------------------------------</td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID</td>
+    <td><font size="+1"> 282_443c0408_440c040a</font></td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/Mixture//282_443c0408_440c040a_0.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>SISO<sub>1</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/SISO1//282_443c0408_440c040a_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/SISO1//282_443c0408_440c040a_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1//282_443c0408_440c040a_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1//282_443c0408_440c040a_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-BF-MISO<sub>2</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO2//282_443c0408_440c040a_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO2//282_443c0408_440c040a_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-BF-MISO<sub>3</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO3//282_443c0408_440c040a_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO3//282_443c0408_440c040a_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-MISO<sub>4</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO4//282_443c0408_440c040a_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO4//282_443c0408_440c040a_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-MISO<sub>5</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO5//282_443c0408_440c040a_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO5//282_443c0408_440c040a_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>DPRNN-TasNet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DPRNN//282_443c0408_440c040a_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DPRNN//282_443c0408_440c040a_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>FaSNet with TAC</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/FaSNet//282_443c0408_440c040a_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/FaSNet//282_443c0408_440c040a_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MC-ConvTasNet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MC-ConvTasNet//282_443c0408_440c040a_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MC-ConvTasNet//282_443c0408_440c040a_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>Direct Sound</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DirectSound//282_443c0408_440c040a_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DirectSound//282_443c0408_440c040a_1.wav" controls></audio></td>
+    </tr>
+    <td>-------------------------------</td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID</td>
+    <td><font size="+1"> 176_440c0416_442c040l</font></td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/Mixture//176_440c0416_442c040l_0.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>SISO<sub>1</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/SISO1//176_440c0416_442c040l_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/SISO1//176_440c0416_442c040l_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1//176_440c0416_442c040l_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1//176_440c0416_442c040l_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-BF-MISO<sub>2</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO2//176_440c0416_442c040l_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO2//176_440c0416_442c040l_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-BF-MISO<sub>3</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO3//176_440c0416_442c040l_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO3//176_440c0416_442c040l_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-MISO<sub>4</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO4//176_440c0416_442c040l_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO4//176_440c0416_442c040l_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-MISO<sub>5</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO5//176_440c0416_442c040l_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO5//176_440c0416_442c040l_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>DPRNN-TasNet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DPRNN//176_440c0416_442c040l_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DPRNN//176_440c0416_442c040l_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>FaSNet with TAC</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/FaSNet//176_440c0416_442c040l_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/FaSNet//176_440c0416_442c040l_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MC-ConvTasNet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MC-ConvTasNet//176_440c0416_442c040l_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MC-ConvTasNet//176_440c0416_442c040l_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>Direct Sound</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DirectSound//176_440c0416_442c040l_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DirectSound//176_440c0416_442c040l_1.wav" controls></audio></td>
+    </tr>
+    <td>-------------------------------</td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID</td>
+    <td><font size="+1"> 251_444c040y_441c0411</font></td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/Mixture//251_444c040y_441c0411_0.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>SISO<sub>1</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/SISO1//251_444c040y_441c0411_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/SISO1//251_444c040y_441c0411_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1//251_444c040y_441c0411_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1//251_444c040y_441c0411_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-BF-MISO<sub>2</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO2//251_444c040y_441c0411_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO2//251_444c040y_441c0411_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-BF-MISO<sub>3</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO3//251_444c040y_441c0411_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-BF-MISO3//251_444c040y_441c0411_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-MISO<sub>4</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO4//251_444c040y_441c0411_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO4//251_444c040y_441c0411_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MISO<sub>1</sub>-MISO<sub>5</sub></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO5//251_444c040y_441c0411_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MISO1-MISO5//251_444c040y_441c0411_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>DPRNN-TasNet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DPRNN//251_444c040y_441c0411_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DPRNN//251_444c040y_441c0411_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>FaSNet with TAC</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/FaSNet//251_444c040y_441c0411_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/FaSNet//251_444c040y_441c0411_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>MC-ConvTasNet</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MC-ConvTasNet//251_444c040y_441c0411_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/MC-ConvTasNet//251_444c040y_441c0411_1.wav" controls></audio></td>
+    </tr>
+    <tr>
+        <td>Direct Sound</td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DirectSound//251_444c040y_441c0411_0.wav" controls></audio></td>
+        <td><audio style="width: 250px;" src="./demo_wavs/test_eval92/DirectSound//251_444c040y_441c0411_1.wav" controls></audio></td>
+    </tr>
+</tr>
+</table>
+</body>
+</html>
