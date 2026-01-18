@@ -1,0 +1,10 @@
+document.write('<div id="SM__adt__24071130924521414524928408154234">');var sm_random = Math.ceil(1000000*Math.random());
+var u = '';
+var r = '';
+try
+{
+u = encodeURIComponent(document.location);
+r = encodeURIComponent(document.referrer);
+}catch(e){}
+document.write("<scr"+"ipt type='text/javascript' src='//x.vindicosuite.com/imp/?l=240745&t=j&u="+u+"&r="+r+"&rnd="+sm_random+"'></scr"+"ipt>");document.write('<scr'+'ipt language="JavaScript" type="text/javascript" src="http://ver-adt.vindicosuite.com/verify.js?event=1&iid=SM__adt__24071130924521414524928408154234&pid=0&lid=0&clid=3&aid=0&cid=0&crid=0&pt=3&ppid=1&pioid=&pbkid=238909&pcid=712433&plid=240711&dur=0&adw=728&adh=90&rn=1414524928"></scr'+'ipt>');
+document.write('</div>'); document.write('<img src="http://cache.specificmedia.com/creative/blank.gif?ts=1414524928216&cmxid=2101.010071243303092452xmc" style="display: none" height="1" width="1" border="0" />');var _comscore = _comscore || [];   _comscore.push({ c1: "8", c2: "2101" ,c3: "1234567891234567891"});   (function() {     var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;     s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";     el.parentNode.insertBefore(s, el);   })();
