@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 align="center"><strong>Sound Demo of USDnet on WSJ0CAM-DEREVERB Corpus</strong></h1>
+<br>
+<p>This webpage provides a sound demo on the test set of the WSJ0CAM-DEREVERB corpus. For technical details, please refer to the following paper:</p>
+<blockquote>
+<u><strong>Z.-Q. Wang</strong></u>, "<a href="https://zqwang7.github.io/publications/TASLP2024_USDnet_Unsupervised_Speech_Dereverberation_via_Neural_Forward_Filtering.pdf" target="view_window">USDnet: Unsupervised Speech Dereverberation via Neural Forward Filtering</a>", in <i>IEEE/ACM Transactions on Audio, Speech, and Language Processing (<strong>IEEE/ACM TASLP</strong>)</i>, vol. 32, pp. 3882-3895, 2024.
+</blockquote>
+<br>
+This demo presents the dereverberation results of
+<br>
+1. <a href="#monaural_input">10 randomly-selected test signals in 1-channel input cases</a> (click to jump to the section)
+<br>
+2. <a href="#eight_channel_input">10 randomly-selected test signals in 8-channel input cases</a> (click to jump to the section)
+<br>
+Firefox is recommended.
+<br>
+<hr color="#0ABAB5"; size="5"><td><h2 id="monaural_input">Monural Input</h2></td>
+<table style="width:80%">
+<tr>
+    <tr>
+    <td>Utterance ID=000237, T60=0.7533</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td style="text-align: center">PESQ</td>
+    <td style="text-align: center">eSTOI</td>
+    <td style="text-align: center">SI-SDR (dB)</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/Mixture//000237_0.7533.mix.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/Mixture//000237_0.7533.mix.png" controls></img></td>
+        <td style="text-align: center">1.38</td>
+        <td style="text-align: center">0.429</td>
+        <td style="text-align: center">-5.6</td>
+    </tr>
+    <tr>
+        <td>USDnet (row 3a of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/USDnet//000237_0.7533_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/USDnet//000237_0.7533_0.est.png" controls></img></td>
+        <td style="text-align: center">2.38</td>
+        <td style="text-align: center">0.792</td>
+        <td style="text-align: center">1.8</td>
+    </tr>
+    <tr>
+        <td>WPE (row 4a of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/WPE//000237_0.7533_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/WPE//000237_0.7533_0.est.png" controls></img></td>
+        <td style="text-align: center">1.56</td>
+        <td style="text-align: center">0.548</td>
+        <td style="text-align: center">-4.2</td>
+    </tr>
+    <tr>
+        <td>Clean Anechoic</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/Clean_Anechoic//000237_0.7533_0.cln.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/Clean_Anechoic//000237_0.7533_0.cln.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=000686, T60=1.0576</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td style="text-align: center">PESQ</td>
+    <td style="text-align: center">eSTOI</td>
+    <td style="text-align: center">SI-SDR (dB)</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/Mixture//000686_1.0576.mix.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/Mixture//000686_1.0576.mix.png" controls></img></td>
+        <td style="text-align: center">1.41</td>
+        <td style="text-align: center">0.280</td>
+        <td style="text-align: center">-10.6</td>
+    </tr>
+    <tr>
+        <td>USDnet (row 3a of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/USDnet//000686_1.0576_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/USDnet//000686_1.0576_0.est.png" controls></img></td>
+        <td style="text-align: center">2.26</td>
+        <td style="text-align: center">0.689</td>
+        <td style="text-align: center">-2.3</td>
+    </tr>
+    <tr>
+        <td>WPE (row 4a of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/WPE//000686_1.0576_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/WPE//000686_1.0576_0.est.png" controls></img></td>
+        <td style="text-align: center">1.56</td>
+        <td style="text-align: center">0.358</td>
+        <td style="text-align: center">-8.7</td>
+    </tr>
+    <tr>
+        <td>Clean Anechoic</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/Clean_Anechoic//000686_1.0576_0.cln.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/Clean_Anechoic//000686_1.0576_0.cln.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=000298, T60=0.6795</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td style="text-align: center">PESQ</td>
+    <td style="text-align: center">eSTOI</td>
+    <td style="text-align: center">SI-SDR (dB)</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/Mixture//000298_0.6795.mix.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/Mixture//000298_0.6795.mix.png" controls></img></td>
+        <td style="text-align: center">1.59</td>
+        <td style="text-align: center">0.458</td>
+        <td style="text-align: center">-5.2</td>
+    </tr>
+    <tr>
+        <td>USDnet (row 3a of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/USDnet//000298_0.6795_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/USDnet//000298_0.6795_0.est.png" controls></img></td>
+        <td style="text-align: center">2.53</td>
+        <td style="text-align: center">0.835</td>
+        <td style="text-align: center">2.1</td>
+    </tr>
+    <tr>
+        <td>WPE (row 4a of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/WPE//000298_0.6795_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/WPE//000298_0.6795_0.est.png" controls></img></td>
+        <td style="text-align: center">1.82</td>
+        <td style="text-align: center">0.631</td>
+        <td style="text-align: center">-2.1</td>
+    </tr>
+    <tr>
+        <td>Clean Anechoic</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/Clean_Anechoic//000298_0.6795_0.cln.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/Clean_Anechoic//000298_0.6795_0.cln.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=001829, T60=0.5240</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td style="text-align: center">PESQ</td>
+    <td style="text-align: center">eSTOI</td>
+    <td style="text-align: center">SI-SDR (dB)</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/Mixture//001829_0.5240.mix.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/Mixture//001829_0.5240.mix.png" controls></img></td>
+        <td style="text-align: center">2.06</td>
+        <td style="text-align: center">0.720</td>
+        <td style="text-align: center">2.4</td>
+    </tr>
+    <tr>
+        <td>USDnet (row 3a of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/USDnet//001829_0.5240_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/USDnet//001829_0.5240_0.est.png" controls></img></td>
+        <td style="text-align: center">3.22</td>
+        <td style="text-align: center">0.918</td>
+        <td style="text-align: center">8.9</td>
+    </tr>
+    <tr>
+        <td>WPE (row 4a of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/WPE//001829_0.5240_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/WPE//001829_0.5240_0.est.png" controls></img></td>
+        <td style="text-align: center">2.31</td>
+        <td style="text-align: center">0.848</td>
+        <td style="text-align: center">6.4</td>
+    </tr>
+    <tr>
+        <td>Clean Anechoic</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/Clean_Anechoic//001829_0.5240_0.cln.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/Clean_Anechoic//001829_0.5240_0.cln.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=001457, T60=0.6059</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td style="text-align: center">PESQ</td>
+    <td style="text-align: center">eSTOI</td>
+    <td style="text-align: center">SI-SDR (dB)</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/Mixture//001457_0.6059.mix.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/Mixture//001457_0.6059.mix.png" controls></img></td>
+        <td style="text-align: center">1.96</td>
+        <td style="text-align: center">0.718</td>
+        <td style="text-align: center">1.3</td>
+    </tr>
+    <tr>
+        <td>USDnet (row 3a of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/USDnet//001457_0.6059_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/USDnet//001457_0.6059_0.est.png" controls></img></td>
+        <td style="text-align: center">2.99</td>
+        <td style="text-align: center">0.909</td>
+        <td style="text-align: center">5.9</td>
+    </tr>
+    <tr>
+        <td>WPE (row 4a of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/WPE//001457_0.6059_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/WPE//001457_0.6059_0.est.png" controls></img></td>
+        <td style="text-align: center">2.37</td>
+        <td style="text-align: center">0.851</td>
+        <td style="text-align: center">4.9</td>
+    </tr>
+    <tr>
+        <td>Clean Anechoic</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/Clean_Anechoic//001457_0.6059_0.cln.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/Clean_Anechoic//001457_0.6059_0.cln.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=001058, T60=1.1142</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td style="text-align: center">PESQ</td>
+    <td style="text-align: center">eSTOI</td>
+    <td style="text-align: center">SI-SDR (dB)</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/Mixture//001058_1.1142.mix.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/Mixture//001058_1.1142.mix.png" controls></img></td>
+        <td style="text-align: center">1.53</td>
+        <td style="text-align: center">0.400</td>
+        <td style="text-align: center">-7.1</td>
+    </tr>
+    <tr>
+        <td>USDnet (row 3a of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/USDnet//001058_1.1142_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/USDnet//001058_1.1142_0.est.png" controls></img></td>
+        <td style="text-align: center">2.27</td>
+        <td style="text-align: center">0.692</td>
+        <td style="text-align: center">0.6</td>
+    </tr>
+    <tr>
+        <td>WPE (row 4a of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/WPE//001058_1.1142_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/WPE//001058_1.1142_0.est.png" controls></img></td>
+        <td style="text-align: center">1.63</td>
+        <td style="text-align: center">0.468</td>
+        <td style="text-align: center">-5.1</td>
+    </tr>
+    <tr>
+        <td>Clean Anechoic</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/Clean_Anechoic//001058_1.1142_0.cln.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/Clean_Anechoic//001058_1.1142_0.cln.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=000865, T60=0.4620</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td style="text-align: center">PESQ</td>
+    <td style="text-align: center">eSTOI</td>
+    <td style="text-align: center">SI-SDR (dB)</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/Mixture//000865_0.4620.mix.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/Mixture//000865_0.4620.mix.png" controls></img></td>
+        <td style="text-align: center">1.77</td>
+        <td style="text-align: center">0.624</td>
+        <td style="text-align: center">0.5</td>
+    </tr>
+    <tr>
+        <td>USDnet (row 3a of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/USDnet//000865_0.4620_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/USDnet//000865_0.4620_0.est.png" controls></img></td>
+        <td style="text-align: center">2.73</td>
+        <td style="text-align: center">0.873</td>
+        <td style="text-align: center">6.6</td>
+    </tr>
+    <tr>
+        <td>WPE (row 4a of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/WPE//000865_0.4620_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/WPE//000865_0.4620_0.est.png" controls></img></td>
+        <td style="text-align: center">1.93</td>
+        <td style="text-align: center">0.733</td>
+        <td style="text-align: center">2.6</td>
+    </tr>
+    <tr>
+        <td>Clean Anechoic</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/Clean_Anechoic//000865_0.4620_0.cln.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/Clean_Anechoic//000865_0.4620_0.cln.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=001314, T60=0.4671</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td style="text-align: center">PESQ</td>
+    <td style="text-align: center">eSTOI</td>
+    <td style="text-align: center">SI-SDR (dB)</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/Mixture//001314_0.4671.mix.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/Mixture//001314_0.4671.mix.png" controls></img></td>
+        <td style="text-align: center">2.15</td>
+        <td style="text-align: center">0.788</td>
+        <td style="text-align: center">3.5</td>
+    </tr>
+    <tr>
+        <td>USDnet (row 3a of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/USDnet//001314_0.4671_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/USDnet//001314_0.4671_0.est.png" controls></img></td>
+        <td style="text-align: center">3.67</td>
+        <td style="text-align: center">0.935</td>
+        <td style="text-align: center">8.4</td>
+    </tr>
+    <tr>
+        <td>WPE (row 4a of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/WPE//001314_0.4671_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/WPE//001314_0.4671_0.est.png" controls></img></td>
+        <td style="text-align: center">2.94</td>
+        <td style="text-align: center">0.924</td>
+        <td style="text-align: center">8.1</td>
+    </tr>
+    <tr>
+        <td>Clean Anechoic</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/Clean_Anechoic//001314_0.4671_0.cln.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/Clean_Anechoic//001314_0.4671_0.cln.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=001563, T60=0.6401</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td style="text-align: center">PESQ</td>
+    <td style="text-align: center">eSTOI</td>
+    <td style="text-align: center">SI-SDR (dB)</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/Mixture//001563_0.6401.mix.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/Mixture//001563_0.6401.mix.png" controls></img></td>
+        <td style="text-align: center">1.78</td>
+        <td style="text-align: center">0.559</td>
+        <td style="text-align: center">2.5</td>
+    </tr>
+    <tr>
+        <td>USDnet (row 3a of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/USDnet//001563_0.6401_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/USDnet//001563_0.6401_0.est.png" controls></img></td>
+        <td style="text-align: center">2.09</td>
+        <td style="text-align: center">0.696</td>
+        <td style="text-align: center">6.1</td>
+    </tr>
+    <tr>
+        <td>WPE (row 4a of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/WPE//001563_0.6401_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/WPE//001563_0.6401_0.est.png" controls></img></td>
+        <td style="text-align: center">1.82</td>
+        <td style="text-align: center">0.599</td>
+        <td style="text-align: center">4.5</td>
+    </tr>
+    <tr>
+        <td>Clean Anechoic</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/Clean_Anechoic//001563_0.6401_0.cln.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/Clean_Anechoic//001563_0.6401_0.cln.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=000185, T60=0.7235</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td style="text-align: center">PESQ</td>
+    <td style="text-align: center">eSTOI</td>
+    <td style="text-align: center">SI-SDR (dB)</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/Mixture//000185_0.7235.mix.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/Mixture//000185_0.7235.mix.png" controls></img></td>
+        <td style="text-align: center">1.52</td>
+        <td style="text-align: center">0.532</td>
+        <td style="text-align: center">-1.3</td>
+    </tr>
+    <tr>
+        <td>USDnet (row 3a of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/USDnet//000185_0.7235_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/USDnet//000185_0.7235_0.est.png" controls></img></td>
+        <td style="text-align: center">2.50</td>
+        <td style="text-align: center">0.796</td>
+        <td style="text-align: center">3.7</td>
+    </tr>
+    <tr>
+        <td>WPE (row 4a of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/WPE//000185_0.7235_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/WPE//000185_0.7235_0.est.png" controls></img></td>
+        <td style="text-align: center">1.63</td>
+        <td style="text-align: center">0.635</td>
+        <td style="text-align: center">1.9</td>
+    </tr>
+    <tr>
+        <td>Clean Anechoic</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch_8ch/Clean_Anechoic//000185_0.7235_0.cln.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//1ch_8ch/Clean_Anechoic//000185_0.7235_0.cln.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+</tr>
+</table>
+<hr color="#0ABAB5"; size="5"><td><h2 id="eight_channel_input">Eight-Channel Input</h2></td>
+<table style="width:80%">
+<tr>
+    <tr>
+    <td>Utterance ID=002474, T60=0.8400</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td style="text-align: center">PESQ</td>
+    <td style="text-align: center">eSTOI</td>
+    <td style="text-align: center">SI-SDR (dB)</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/Mixture//002474_0.8400.mix.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/Mixture//002474_0.8400.mix.png" controls></img></td>
+        <td style="text-align: center">1.41</td>
+        <td style="text-align: center">0.434</td>
+        <td style="text-align: center">-3.7</td>
+    </tr>
+    <tr>
+        <td>USDnet (row 3b of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/USDnet//002474_0.8400_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/USDnet//002474_0.8400_0.est.png" controls></img></td>
+        <td style="text-align: center">2.13</td>
+        <td style="text-align: center">0.782</td>
+        <td style="text-align: center">2.9</td>
+    </tr>
+    <tr>
+        <td>WPE (row 4b of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/WPE//002474_0.8400_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/WPE//002474_0.8400_0.est.png" controls></img></td>
+        <td style="text-align: center">1.53</td>
+        <td style="text-align: center">0.612</td>
+        <td style="text-align: center">1.1</td>
+    </tr>
+    <tr>
+        <td>Clean Anechoic</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/Clean_Anechoic//002474_0.8400_0.cln.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/Clean_Anechoic//002474_0.8400_0.cln.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=002052, T60=0.2988</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td style="text-align: center">PESQ</td>
+    <td style="text-align: center">eSTOI</td>
+    <td style="text-align: center">SI-SDR (dB)</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/Mixture//002052_0.2988.mix.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/Mixture//002052_0.2988.mix.png" controls></img></td>
+        <td style="text-align: center">2.13</td>
+        <td style="text-align: center">0.726</td>
+        <td style="text-align: center">0.4</td>
+    </tr>
+    <tr>
+        <td>USDnet (row 3b of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/USDnet//002052_0.2988_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/USDnet//002052_0.2988_0.est.png" controls></img></td>
+        <td style="text-align: center">3.16</td>
+        <td style="text-align: center">0.871</td>
+        <td style="text-align: center">2.9</td>
+    </tr>
+    <tr>
+        <td>WPE (row 4b of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/WPE//002052_0.2988_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/WPE//002052_0.2988_0.est.png" controls></img></td>
+        <td style="text-align: center">2.83</td>
+        <td style="text-align: center">0.861</td>
+        <td style="text-align: center">4.3</td>
+    </tr>
+    <tr>
+        <td>Clean Anechoic</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/Clean_Anechoic//002052_0.2988_0.cln.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/Clean_Anechoic//002052_0.2988_0.cln.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=000361, T60=0.9619</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td style="text-align: center">PESQ</td>
+    <td style="text-align: center">eSTOI</td>
+    <td style="text-align: center">SI-SDR (dB)</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/Mixture//000361_0.9619.mix.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/Mixture//000361_0.9619.mix.png" controls></img></td>
+        <td style="text-align: center">1.31</td>
+        <td style="text-align: center">0.318</td>
+        <td style="text-align: center">-10.2</td>
+    </tr>
+    <tr>
+        <td>USDnet (row 3b of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/USDnet//000361_0.9619_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/USDnet//000361_0.9619_0.est.png" controls></img></td>
+        <td style="text-align: center">2.02</td>
+        <td style="text-align: center">0.681</td>
+        <td style="text-align: center">-2.5</td>
+    </tr>
+    <tr>
+        <td>WPE (row 4b of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/WPE//000361_0.9619_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/WPE//000361_0.9619_0.est.png" controls></img></td>
+        <td style="text-align: center">1.47</td>
+        <td style="text-align: center">0.462</td>
+        <td style="text-align: center">-4.8</td>
+    </tr>
+    <tr>
+        <td>Clean Anechoic</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/Clean_Anechoic//000361_0.9619_0.cln.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/Clean_Anechoic//000361_0.9619_0.cln.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=000087, T60=0.9660</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td style="text-align: center">PESQ</td>
+    <td style="text-align: center">eSTOI</td>
+    <td style="text-align: center">SI-SDR (dB)</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/Mixture//000087_0.9660.mix.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/Mixture//000087_0.9660.mix.png" controls></img></td>
+        <td style="text-align: center">1.56</td>
+        <td style="text-align: center">0.439</td>
+        <td style="text-align: center">-3.5</td>
+    </tr>
+    <tr>
+        <td>USDnet (row 3b of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/USDnet//000087_0.9660_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/USDnet//000087_0.9660_0.est.png" controls></img></td>
+        <td style="text-align: center">2.37</td>
+        <td style="text-align: center">0.706</td>
+        <td style="text-align: center">3.1</td>
+    </tr>
+    <tr>
+        <td>WPE (row 4b of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/WPE//000087_0.9660_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/WPE//000087_0.9660_0.est.png" controls></img></td>
+        <td style="text-align: center">1.94</td>
+        <td style="text-align: center">0.621</td>
+        <td style="text-align: center">1.4</td>
+    </tr>
+    <tr>
+        <td>Clean Anechoic</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/Clean_Anechoic//000087_0.9660_0.cln.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/Clean_Anechoic//000087_0.9660_0.cln.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=000181, T60=1.0325</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td style="text-align: center">PESQ</td>
+    <td style="text-align: center">eSTOI</td>
+    <td style="text-align: center">SI-SDR (dB)</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/Mixture//000181_1.0325.mix.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/Mixture//000181_1.0325.mix.png" controls></img></td>
+        <td style="text-align: center">1.35</td>
+        <td style="text-align: center">0.319</td>
+        <td style="text-align: center">-7.2</td>
+    </tr>
+    <tr>
+        <td>USDnet (row 3b of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/USDnet//000181_1.0325_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/USDnet//000181_1.0325_0.est.png" controls></img></td>
+        <td style="text-align: center">1.83</td>
+        <td style="text-align: center">0.649</td>
+        <td style="text-align: center">-1.3</td>
+    </tr>
+    <tr>
+        <td>WPE (row 4b of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/WPE//000181_1.0325_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/WPE//000181_1.0325_0.est.png" controls></img></td>
+        <td style="text-align: center">1.47</td>
+        <td style="text-align: center">0.497</td>
+        <td style="text-align: center">-2.0</td>
+    </tr>
+    <tr>
+        <td>Clean Anechoic</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/Clean_Anechoic//000181_1.0325_0.cln.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/Clean_Anechoic//000181_1.0325_0.cln.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=000718, T60=0.5799</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td style="text-align: center">PESQ</td>
+    <td style="text-align: center">eSTOI</td>
+    <td style="text-align: center">SI-SDR (dB)</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/Mixture//000718_0.5799.mix.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/Mixture//000718_0.5799.mix.png" controls></img></td>
+        <td style="text-align: center">1.73</td>
+        <td style="text-align: center">0.412</td>
+        <td style="text-align: center">-6.2</td>
+    </tr>
+    <tr>
+        <td>USDnet (row 3b of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/USDnet//000718_0.5799_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/USDnet//000718_0.5799_0.est.png" controls></img></td>
+        <td style="text-align: center">2.61</td>
+        <td style="text-align: center">0.734</td>
+        <td style="text-align: center">-1.1</td>
+    </tr>
+    <tr>
+        <td>WPE (row 4b of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/WPE//000718_0.5799_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/WPE//000718_0.5799_0.est.png" controls></img></td>
+        <td style="text-align: center">2.19</td>
+        <td style="text-align: center">0.699</td>
+        <td style="text-align: center">-0.8</td>
+    </tr>
+    <tr>
+        <td>Clean Anechoic</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/Clean_Anechoic//000718_0.5799_0.cln.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/Clean_Anechoic//000718_0.5799_0.cln.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=002570, T60=0.7649</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td style="text-align: center">PESQ</td>
+    <td style="text-align: center">eSTOI</td>
+    <td style="text-align: center">SI-SDR (dB)</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/Mixture//002570_0.7649.mix.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/Mixture//002570_0.7649.mix.png" controls></img></td>
+        <td style="text-align: center">1.43</td>
+        <td style="text-align: center">0.483</td>
+        <td style="text-align: center">-9.4</td>
+    </tr>
+    <tr>
+        <td>USDnet (row 3b of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/USDnet//002570_0.7649_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/USDnet//002570_0.7649_0.est.png" controls></img></td>
+        <td style="text-align: center">2.31</td>
+        <td style="text-align: center">0.804</td>
+        <td style="text-align: center">-1.4</td>
+    </tr>
+    <tr>
+        <td>WPE (row 4b of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/WPE//002570_0.7649_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/WPE//002570_0.7649_0.est.png" controls></img></td>
+        <td style="text-align: center">1.68</td>
+        <td style="text-align: center">0.631</td>
+        <td style="text-align: center">-6.3</td>
+    </tr>
+    <tr>
+        <td>Clean Anechoic</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/Clean_Anechoic//002570_0.7649_0.cln.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/Clean_Anechoic//002570_0.7649_0.cln.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=000194, T60=0.3476</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td style="text-align: center">PESQ</td>
+    <td style="text-align: center">eSTOI</td>
+    <td style="text-align: center">SI-SDR (dB)</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/Mixture//000194_0.3476.mix.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/Mixture//000194_0.3476.mix.png" controls></img></td>
+        <td style="text-align: center">1.77</td>
+        <td style="text-align: center">0.619</td>
+        <td style="text-align: center">-0.6</td>
+    </tr>
+    <tr>
+        <td>USDnet (row 3b of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/USDnet//000194_0.3476_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/USDnet//000194_0.3476_0.est.png" controls></img></td>
+        <td style="text-align: center">2.78</td>
+        <td style="text-align: center">0.815</td>
+        <td style="text-align: center">3.4</td>
+    </tr>
+    <tr>
+        <td>WPE (row 4b of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/WPE//000194_0.3476_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/WPE//000194_0.3476_0.est.png" controls></img></td>
+        <td style="text-align: center">2.37</td>
+        <td style="text-align: center">0.819</td>
+        <td style="text-align: center">4.4</td>
+    </tr>
+    <tr>
+        <td>Clean Anechoic</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/Clean_Anechoic//000194_0.3476_0.cln.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/Clean_Anechoic//000194_0.3476_0.cln.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=001377, T60=1.1099</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td style="text-align: center">PESQ</td>
+    <td style="text-align: center">eSTOI</td>
+    <td style="text-align: center">SI-SDR (dB)</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/Mixture//001377_1.1099.mix.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/Mixture//001377_1.1099.mix.png" controls></img></td>
+        <td style="text-align: center">1.33</td>
+        <td style="text-align: center">0.406</td>
+        <td style="text-align: center">-2.5</td>
+    </tr>
+    <tr>
+        <td>USDnet (row 3b of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/USDnet//001377_1.1099_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/USDnet//001377_1.1099_0.est.png" controls></img></td>
+        <td style="text-align: center">1.72</td>
+        <td style="text-align: center">0.686</td>
+        <td style="text-align: center">4.7</td>
+    </tr>
+    <tr>
+        <td>WPE (row 4b of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/WPE//001377_1.1099_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/WPE//001377_1.1099_0.est.png" controls></img></td>
+        <td style="text-align: center">1.42</td>
+        <td style="text-align: center">0.566</td>
+        <td style="text-align: center">3.3</td>
+    </tr>
+    <tr>
+        <td>Clean Anechoic</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/Clean_Anechoic//001377_1.1099_0.cln.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/Clean_Anechoic//001377_1.1099_0.cln.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=002021, T60=0.2937</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td style="text-align: center">PESQ</td>
+    <td style="text-align: center">eSTOI</td>
+    <td style="text-align: center">SI-SDR (dB)</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/Mixture//002021_0.2937.mix.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/Mixture//002021_0.2937.mix.png" controls></img></td>
+        <td style="text-align: center">2.33</td>
+        <td style="text-align: center">0.729</td>
+        <td style="text-align: center">1.0</td>
+    </tr>
+    <tr>
+        <td>USDnet (row 3b of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/USDnet//002021_0.2937_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/USDnet//002021_0.2937_0.est.png" controls></img></td>
+        <td style="text-align: center">3.32</td>
+        <td style="text-align: center">0.864</td>
+        <td style="text-align: center">3.6</td>
+    </tr>
+    <tr>
+        <td>WPE (row 4b of Table VIII)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/WPE//002021_0.2937_0.est.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/WPE//002021_0.2937_0.est.png" controls></img></td>
+        <td style="text-align: center">3.20</td>
+        <td style="text-align: center">0.878</td>
+        <td style="text-align: center">4.8</td>
+    </tr>
+    <tr>
+        <td>Clean Anechoic</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//8ch_8ch/Clean_Anechoic//002021_0.2937_0.cln.wav" controls></audio></td>
+        <td><img style="width: 500px;" src="./demo_wavs//8ch_8ch/Clean_Anechoic//002021_0.2937_0.cln.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+</tr>
+</table>
+</body>
+</html>

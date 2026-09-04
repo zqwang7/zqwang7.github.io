@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 align="center"><strong>Sound Demo of <font color="blue">PuLSS with estimated speaker diarization</font> on CHiME-6 Corpus</strong></h1>
+<br>
+<p>We provide a sound demo based on the test set of the CHiME-6 corpus. For technical details, please refer to the following paper:</p><blockquote>Z.-Q. Wang and S. Cornell, "<i>Cross-Talk Speech Reduction, by Separation, for Separation</i>", in submission, 2026.</blockquote>
+This demo presents the results of PuLSS with estimated speaker diarization (diarization results are from the USTC system).
+<br>
+<br>
+Note:
+<br>
+&#8226; The spectrogram of each separated signal is <strong><font color="red">masked using estimated speaker-activity timestamps</font></strong>, resulting in <strong><font color="black">pure black regions</font></strong> in the spectrogram.
+<br>
+&#8226; There are four speakers, so there are four separated signals by each algorithm.
+<br>
+&#8226; <strong><font color="red">PuLSS clearly outperforms GSS and mixtures. It better separates the mixed speekers.</font></strong>.
+<br>
+&#8226; Firefox/Chrome is recommended.
+<br>
+<br>
+We provide the following examples (click to jump to the example):
+<br>
+&#9675; <a href="#S01_at_00:02:06">S01 at 00:02:06</a>
+<br>
+&#9675; <a href="#S01_at_00:22:57">S01 at 00:22:57</a>
+<br>
+&#9675; <a href="#S01_at_01:04:32">S01 at 01:04:32</a>
+<br>
+&#9675; <a href="#S01_at_01:34:23">S01 at 01:34:23</a>
+<br>
+&#9675; <a href="#S01_at_02:04:53">S01 at 02:04:53</a>
+<br>
+&#9675; <a href="#S01_at_02:14:47">S01 at 02:14:47</a>
+<br>
+&#9675; <a href="#S01_at_02:21:02">S01 at 02:21:02</a>
+<br>
+&#9675; <a href="#S21_at_00:02:19">S21 at 00:02:19</a>
+<br>
+&#9675; <a href="#S21_at_00:20:51">S21 at 00:20:51</a>
+<br>
+&#9675; <a href="#S21_at_01:17:05">S21 at 01:17:05</a>
+<br>
+&#9675; <a href="#S21_at_01:53:04">S21 at 01:53:04</a>
+<br>
+&#9675; <a href="#S21_at_02:14:40">S21 at 02:14:40</a>
+<br>
+&#9675; <a href="#S21_at_02:18:49">S21 at 02:18:49</a>
+<br>
+&#9675; <a href="#S21_at_02:25:53">S21 at 02:25:53</a>
+<br>
+<table style="width:100%">
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+<tr>
+<td><h3 id="S01_at_00:02:06">Signal segment:<br>S01 at 00:02:06</h3></td>
+    <tr>
+    <td style="text-align: left">Systems</td>
+    <td style="text-align: left">Speaker</td>
+    <td style="text-align: center">Signal</td>
+    <td style="text-align: center">Log-compreesed Power Spectrogram</td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td>-</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S01_--0:2:6.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S01_--0:2:6.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk0-0:2:6.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk0-0:2:6.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk1-0:2:6.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk1-0:2:6.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk2-0:2:6.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk2-0:2:6.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk3-0:2:6.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk3-0:2:6.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk0-0:2:6.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk0-0:2:6.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk1-0:2:6.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk1-0:2:6.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk2-0:2:6.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk2-0:2:6.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk3-0:2:6.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk3-0:2:6.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk0-0:2:6.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk0-0:2:6.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk1-0:2:6.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk1-0:2:6.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk2-0:2:6.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk2-0:2:6.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk3-0:2:6.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk3-0:2:6.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+<td><h3 id="S01_at_00:22:57">Signal segment:<br>S01 at 00:22:57</h3></td>
+    <tr>
+    <td style="text-align: left">Systems</td>
+    <td style="text-align: left">Speaker</td>
+    <td style="text-align: center">Signal</td>
+    <td style="text-align: center">Log-compreesed Power Spectrogram</td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td>-</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S01_--0:22:57.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S01_--0:22:57.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk0-0:22:57.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk0-0:22:57.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk1-0:22:57.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk1-0:22:57.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk2-0:22:57.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk2-0:22:57.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk3-0:22:57.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk3-0:22:57.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk0-0:22:57.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk0-0:22:57.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk1-0:22:57.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk1-0:22:57.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk2-0:22:57.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk2-0:22:57.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk3-0:22:57.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk3-0:22:57.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk0-0:22:57.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk0-0:22:57.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk1-0:22:57.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk1-0:22:57.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk2-0:22:57.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk2-0:22:57.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk3-0:22:57.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk3-0:22:57.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+<td><h3 id="S01_at_01:04:32">Signal segment:<br>S01 at 01:04:32</h3></td>
+    <tr>
+    <td style="text-align: left">Systems</td>
+    <td style="text-align: left">Speaker</td>
+    <td style="text-align: center">Signal</td>
+    <td style="text-align: center">Log-compreesed Power Spectrogram</td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td>-</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S01_--1:4:32.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S01_--1:4:32.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk0-1:4:32.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk0-1:4:32.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk1-1:4:32.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk1-1:4:32.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk2-1:4:32.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk2-1:4:32.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk3-1:4:32.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk3-1:4:32.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk0-1:4:32.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk0-1:4:32.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk1-1:4:32.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk1-1:4:32.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk2-1:4:32.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk2-1:4:32.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk3-1:4:32.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk3-1:4:32.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk0-1:4:32.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk0-1:4:32.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk1-1:4:32.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk1-1:4:32.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk2-1:4:32.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk2-1:4:32.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk3-1:4:32.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk3-1:4:32.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+<td><h3 id="S01_at_01:34:23">Signal segment:<br>S01 at 01:34:23</h3></td>
+    <tr>
+    <td style="text-align: left">Systems</td>
+    <td style="text-align: left">Speaker</td>
+    <td style="text-align: center">Signal</td>
+    <td style="text-align: center">Log-compreesed Power Spectrogram</td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td>-</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S01_--1:34:23.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S01_--1:34:23.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk0-1:34:23.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk0-1:34:23.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk1-1:34:23.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk1-1:34:23.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk2-1:34:23.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk2-1:34:23.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk3-1:34:23.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk3-1:34:23.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk0-1:34:23.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk0-1:34:23.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk1-1:34:23.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk1-1:34:23.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk2-1:34:23.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk2-1:34:23.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk3-1:34:23.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk3-1:34:23.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk0-1:34:23.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk0-1:34:23.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk1-1:34:23.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk1-1:34:23.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk2-1:34:23.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk2-1:34:23.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk3-1:34:23.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk3-1:34:23.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+<td><h3 id="S01_at_02:04:53">Signal segment:<br>S01 at 02:04:53</h3></td>
+    <tr>
+    <td style="text-align: left">Systems</td>
+    <td style="text-align: left">Speaker</td>
+    <td style="text-align: center">Signal</td>
+    <td style="text-align: center">Log-compreesed Power Spectrogram</td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td>-</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S01_--2:4:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S01_--2:4:53.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk0-2:4:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk0-2:4:53.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk1-2:4:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk1-2:4:53.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk2-2:4:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk2-2:4:53.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk3-2:4:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk3-2:4:53.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk0-2:4:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk0-2:4:53.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk1-2:4:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk1-2:4:53.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk2-2:4:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk2-2:4:53.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk3-2:4:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk3-2:4:53.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk0-2:4:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk0-2:4:53.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk1-2:4:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk1-2:4:53.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk2-2:4:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk2-2:4:53.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk3-2:4:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk3-2:4:53.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+<td><h3 id="S01_at_02:14:47">Signal segment:<br>S01 at 02:14:47</h3></td>
+    <tr>
+    <td style="text-align: left">Systems</td>
+    <td style="text-align: left">Speaker</td>
+    <td style="text-align: center">Signal</td>
+    <td style="text-align: center">Log-compreesed Power Spectrogram</td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td>-</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S01_--2:14:47.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S01_--2:14:47.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk0-2:14:47.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk0-2:14:47.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk1-2:14:47.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk1-2:14:47.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk2-2:14:47.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk2-2:14:47.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk3-2:14:47.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk3-2:14:47.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk0-2:14:47.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk0-2:14:47.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk1-2:14:47.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk1-2:14:47.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk2-2:14:47.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk2-2:14:47.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk3-2:14:47.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk3-2:14:47.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk0-2:14:47.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk0-2:14:47.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk1-2:14:47.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk1-2:14:47.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk2-2:14:47.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk2-2:14:47.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk3-2:14:47.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk3-2:14:47.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+<td><h3 id="S01_at_02:21:02">Signal segment:<br>S01 at 02:21:02</h3></td>
+    <tr>
+    <td style="text-align: left">Systems</td>
+    <td style="text-align: left">Speaker</td>
+    <td style="text-align: center">Signal</td>
+    <td style="text-align: center">Log-compreesed Power Spectrogram</td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td>-</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S01_--2:21:2.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S01_--2:21:2.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk0-2:21:2.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk0-2:21:2.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk1-2:21:2.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk1-2:21:2.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk2-2:21:2.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk2-2:21:2.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk3-2:21:2.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S01_spk3-2:21:2.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk0-2:21:2.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk0-2:21:2.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk1-2:21:2.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk1-2:21:2.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk2-2:21:2.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk2-2:21:2.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk3-2:21:2.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S01_spk3-2:21:2.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk0-2:21:2.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk0-2:21:2.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk1-2:21:2.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk1-2:21:2.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk2-2:21:2.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk2-2:21:2.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk3-2:21:2.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S01_spk3-2:21:2.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+<td><h3 id="S21_at_00:02:19">Signal segment:<br>S21 at 00:02:19</h3></td>
+    <tr>
+    <td style="text-align: left">Systems</td>
+    <td style="text-align: left">Speaker</td>
+    <td style="text-align: center">Signal</td>
+    <td style="text-align: center">Log-compreesed Power Spectrogram</td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td>-</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S21_--0:2:19.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S21_--0:2:19.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk0-0:2:19.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk0-0:2:19.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk1-0:2:19.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk1-0:2:19.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk2-0:2:19.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk2-0:2:19.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk3-0:2:19.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk3-0:2:19.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk0-0:2:19.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk0-0:2:19.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk1-0:2:19.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk1-0:2:19.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk2-0:2:19.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk2-0:2:19.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk3-0:2:19.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk3-0:2:19.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk0-0:2:19.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk0-0:2:19.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk1-0:2:19.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk1-0:2:19.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk2-0:2:19.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk2-0:2:19.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk3-0:2:19.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk3-0:2:19.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+<td><h3 id="S21_at_00:20:51">Signal segment:<br>S21 at 00:20:51</h3></td>
+    <tr>
+    <td style="text-align: left">Systems</td>
+    <td style="text-align: left">Speaker</td>
+    <td style="text-align: center">Signal</td>
+    <td style="text-align: center">Log-compreesed Power Spectrogram</td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td>-</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S21_--0:20:51.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S21_--0:20:51.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk0-0:20:51.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk0-0:20:51.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk1-0:20:51.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk1-0:20:51.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk2-0:20:51.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk2-0:20:51.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk3-0:20:51.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk3-0:20:51.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk0-0:20:51.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk0-0:20:51.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk1-0:20:51.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk1-0:20:51.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk2-0:20:51.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk2-0:20:51.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk3-0:20:51.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk3-0:20:51.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk0-0:20:51.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk0-0:20:51.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk1-0:20:51.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk1-0:20:51.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk2-0:20:51.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk2-0:20:51.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk3-0:20:51.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk3-0:20:51.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+<td><h3 id="S21_at_01:17:05">Signal segment:<br>S21 at 01:17:05</h3></td>
+    <tr>
+    <td style="text-align: left">Systems</td>
+    <td style="text-align: left">Speaker</td>
+    <td style="text-align: center">Signal</td>
+    <td style="text-align: center">Log-compreesed Power Spectrogram</td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td>-</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S21_--1:17:5.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S21_--1:17:5.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk0-1:17:5.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk0-1:17:5.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk1-1:17:5.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk1-1:17:5.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk2-1:17:5.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk2-1:17:5.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk3-1:17:5.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk3-1:17:5.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk0-1:17:5.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk0-1:17:5.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk1-1:17:5.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk1-1:17:5.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk2-1:17:5.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk2-1:17:5.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk3-1:17:5.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk3-1:17:5.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk0-1:17:5.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk0-1:17:5.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk1-1:17:5.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk1-1:17:5.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk2-1:17:5.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk2-1:17:5.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk3-1:17:5.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk3-1:17:5.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+<td><h3 id="S21_at_01:53:04">Signal segment:<br>S21 at 01:53:04</h3></td>
+    <tr>
+    <td style="text-align: left">Systems</td>
+    <td style="text-align: left">Speaker</td>
+    <td style="text-align: center">Signal</td>
+    <td style="text-align: center">Log-compreesed Power Spectrogram</td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td>-</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S21_--1:53:4.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S21_--1:53:4.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk0-1:53:4.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk0-1:53:4.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk1-1:53:4.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk1-1:53:4.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk2-1:53:4.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk2-1:53:4.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk3-1:53:4.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk3-1:53:4.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk0-1:53:4.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk0-1:53:4.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk1-1:53:4.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk1-1:53:4.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk2-1:53:4.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk2-1:53:4.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk3-1:53:4.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk3-1:53:4.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk0-1:53:4.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk0-1:53:4.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk1-1:53:4.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk1-1:53:4.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk2-1:53:4.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk2-1:53:4.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk3-1:53:4.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk3-1:53:4.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+<td><h3 id="S21_at_02:14:40">Signal segment:<br>S21 at 02:14:40</h3></td>
+    <tr>
+    <td style="text-align: left">Systems</td>
+    <td style="text-align: left">Speaker</td>
+    <td style="text-align: center">Signal</td>
+    <td style="text-align: center">Log-compreesed Power Spectrogram</td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td>-</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S21_--2:14:40.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S21_--2:14:40.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk0-2:14:40.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk0-2:14:40.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk1-2:14:40.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk1-2:14:40.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk2-2:14:40.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk2-2:14:40.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk3-2:14:40.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk3-2:14:40.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk0-2:14:40.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk0-2:14:40.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk1-2:14:40.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk1-2:14:40.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk2-2:14:40.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk2-2:14:40.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk3-2:14:40.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk3-2:14:40.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk0-2:14:40.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk0-2:14:40.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk1-2:14:40.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk1-2:14:40.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk2-2:14:40.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk2-2:14:40.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk3-2:14:40.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk3-2:14:40.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+<td><h3 id="S21_at_02:18:49">Signal segment:<br>S21 at 02:18:49</h3></td>
+    <tr>
+    <td style="text-align: left">Systems</td>
+    <td style="text-align: left">Speaker</td>
+    <td style="text-align: center">Signal</td>
+    <td style="text-align: center">Log-compreesed Power Spectrogram</td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td>-</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S21_--2:18:49.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S21_--2:18:49.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk0-2:18:49.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk0-2:18:49.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk1-2:18:49.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk1-2:18:49.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk2-2:18:49.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk2-2:18:49.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk3-2:18:49.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk3-2:18:49.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk0-2:18:49.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk0-2:18:49.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk1-2:18:49.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk1-2:18:49.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk2-2:18:49.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk2-2:18:49.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk3-2:18:49.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk3-2:18:49.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk0-2:18:49.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk0-2:18:49.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk1-2:18:49.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk1-2:18:49.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk2-2:18:49.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk2-2:18:49.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk3-2:18:49.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk3-2:18:49.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+<td><h3 id="S21_at_02:25:53">Signal segment:<br>S21 at 02:25:53</h3></td>
+    <tr>
+    <td style="text-align: left">Systems</td>
+    <td style="text-align: left">Speaker</td>
+    <td style="text-align: center">Signal</td>
+    <td style="text-align: center">Log-compreesed Power Spectrogram</td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td>-</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S21_--2:25:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/mixture//S21_--2:25:53.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk0-2:25:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk0-2:25:53.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk1-2:25:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk1-2:25:53.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk2-2:25:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk2-2:25:53.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk3-2:25:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/Supervised//S21_spk3-2:25:53.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk0-2:25:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk0-2:25:53.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk1-2:25:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk1-2:25:53.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk2-2:25:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk2-2:25:53.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>GSS (24-channel) + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk3-2:25:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/GSS//S21_spk3-2:25:53.png" controls></img></td>
+    </tr>
+    <tr>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+       <td><hr size="3" style="border-style: dashed none none none; border-color: #000000;"></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk0</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk0-2:25:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk0-2:25:53.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk1</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk1-2:25:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk1-2:25:53.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk2</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk2-2:25:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk2-2:25:53.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>PuLSS + USTC diar.</td>
+        <td>spk3</td>
+        <td><audio style="width: 200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk3-2:25:53.wav" controls></audio></td>
+        <td><img style="width: 1200px;" src="./demo_wavs//PuLSS_est_diar_USTC/PuLSS_est_diar_USTC//S21_spk3-2:25:53.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+</table>
+</body>
+</html>
