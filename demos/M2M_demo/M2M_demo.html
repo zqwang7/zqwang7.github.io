@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 align="center"><strong>Sound Demo of M2M on SMS-WSJ-FF-CT Corpus</strong></h1>
+<br>
+<p>This webpage provides a sound demo based on the test set of the SMS-WSJ-FF-CT corpus. For technical details, please refer to the following paper:</p><blockquote>Z.-Q. Wang, "<a href="https://arxiv.org/abs/2402.09313" target="view_window"><i>Mixture to Mixture: Leveraging Close-talk Mixtures as Weak-supervision for Speech Separation</i></a>", in arXiv preprint arXiv:2402.09313, 2024.</blockquote>
+<br>
+This demo presents the separation results of 10 randomly-selected test signals. We consider all the six channels for multi-channel processing (i.e., corresponding to the models in Table 2).
+<br>
+<font color="red"><strong>The SDR scores are computed, in default, by using far-field clean speaker images as the reference signals, except for the case of close-talk mixtures, where close-talk speaker images are used as the reference signals.</strong></font>
+<br>
+Firefox is recommended.
+<br>
+<br>
+<br>
+<table style="width:100%">
+<tr>
+    <tr>
+    <td>Utterance ID: <strong>1046_440c0414_444c040n</strong></td>
+    <td style="text-align: center">Spk 1</td>
+    <td style="text-align: center">Log Mag. of Spk 1</td>
+    <td style="text-align: center">Spk 2</td>
+    <td style="text-align: center">Log Mag. of Spk 2</td>
+    <td style="text-align: center">SDR (dB) of Spk 1</td>
+    <td style="text-align: center">SDR (dB) of Spk 2</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Far-Field Mixture (row 0)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Mixture//1046_440c0414_444c040n.mix.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Mixture//1046_440c0414_444c040n.mix.ff.png" controls></img></td>
+        <td></td>
+        <td></td>
+        <td style="text-align: center">0.7</td>
+        <td style="text-align: center">-0.6</td>
+    </tr>
+    <tr>
+        <td>M2M (row 1a)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//M2M//1046_440c0414_444c040n_0.est.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//M2M//1046_440c0414_444c040n_0.est.ff.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//M2M//1046_440c0414_444c040n_1.est.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//M2M//1046_440c0414_444c040n_1.est.ff.png" controls></img></td>
+        <td style="text-align: center">15.3</td>
+        <td style="text-align: center">15.0</td>
+    </tr>
+    <tr>
+        <td>UNSSOR (row 4a)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//UNSSOR//1046_440c0414_444c040n_0.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//UNSSOR//1046_440c0414_444c040n_0.est.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//UNSSOR//1046_440c0414_444c040n_1.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//UNSSOR//1046_440c0414_444c040n_1.est.png" controls></img></td>
+        <td style="text-align: center">11.6</td>
+        <td style="text-align: center">11.2</td>
+    </tr>
+    <tr>
+        <td>PIT (row 4b)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//PIT//1046_440c0414_444c040n_0.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//PIT//1046_440c0414_444c040n_0.est.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//PIT//1046_440c0414_444c040n_1.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//PIT//1046_440c0414_444c040n_1.est.png" controls></img></td>
+        <td style="text-align: center">16.9</td>
+        <td style="text-align: center">17.0</td>
+    </tr>
+    <tr>
+        <td>Far-Field Clean Speaker Image</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Clean_Speaker_Images//1046_440c0414_444c040n_0.cln.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Clean_Speaker_Images//1046_440c0414_444c040n_0.cln.ff.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Clean_Speaker_Images//1046_440c0414_444c040n_1.cln.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Clean_Speaker_Images//1046_440c0414_444c040n_1.cln.ff.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+        <td>Close-Talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Mixture//1046_440c0414_444c040n_0.mix.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Mixture//1046_440c0414_444c040n_0.mix.ct.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Mixture//1046_440c0414_444c040n_1.mix.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Mixture//1046_440c0414_444c040n_1.mix.ct.png" controls></img></td>
+        <td style="text-align: center">3.8 (ref: close-talk speech)</td>
+        <td style="text-align: center">6.9 (ref: close-talk speech)</td>
+    </tr>
+    <tr>
+        <td>Close-Talk Clean Speaker Image</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Clean_Speaker_Image//1046_440c0414_444c040n_0.cln.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Clean_Speaker_Image//1046_440c0414_444c040n_0.cln.ct.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Clean_Speaker_Image//1046_440c0414_444c040n_1.cln.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Clean_Speaker_Image//1046_440c0414_444c040n_1.cln.ct.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID: <strong>1257_441c0412_442c040j</strong></td>
+    <td style="text-align: center">Spk 1</td>
+    <td style="text-align: center">Log Mag. of Spk 1</td>
+    <td style="text-align: center">Spk 2</td>
+    <td style="text-align: center">Log Mag. of Spk 2</td>
+    <td style="text-align: center">SDR (dB) of Spk 1</td>
+    <td style="text-align: center">SDR (dB) of Spk 2</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Far-Field Mixture (row 0)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Mixture//1257_441c0412_442c040j.mix.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Mixture//1257_441c0412_442c040j.mix.ff.png" controls></img></td>
+        <td></td>
+        <td></td>
+        <td style="text-align: center">2.0</td>
+        <td style="text-align: center">-2.0</td>
+    </tr>
+    <tr>
+        <td>M2M (row 1a)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//M2M//1257_441c0412_442c040j_0.est.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//M2M//1257_441c0412_442c040j_0.est.ff.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//M2M//1257_441c0412_442c040j_1.est.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//M2M//1257_441c0412_442c040j_1.est.ff.png" controls></img></td>
+        <td style="text-align: center">20.0</td>
+        <td style="text-align: center">18.5</td>
+    </tr>
+    <tr>
+        <td>UNSSOR (row 4a)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//UNSSOR//1257_441c0412_442c040j_0.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//UNSSOR//1257_441c0412_442c040j_0.est.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//UNSSOR//1257_441c0412_442c040j_1.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//UNSSOR//1257_441c0412_442c040j_1.est.png" controls></img></td>
+        <td style="text-align: center">18.3</td>
+        <td style="text-align: center">17.0</td>
+    </tr>
+    <tr>
+        <td>PIT (row 4b)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//PIT//1257_441c0412_442c040j_0.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//PIT//1257_441c0412_442c040j_0.est.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//PIT//1257_441c0412_442c040j_1.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//PIT//1257_441c0412_442c040j_1.est.png" controls></img></td>
+        <td style="text-align: center">20.6</td>
+        <td style="text-align: center">19.1</td>
+    </tr>
+    <tr>
+        <td>Far-Field Clean Speaker Image</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Clean_Speaker_Images//1257_441c0412_442c040j_0.cln.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Clean_Speaker_Images//1257_441c0412_442c040j_0.cln.ff.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Clean_Speaker_Images//1257_441c0412_442c040j_1.cln.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Clean_Speaker_Images//1257_441c0412_442c040j_1.cln.ff.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+        <td>Close-Talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Mixture//1257_441c0412_442c040j_0.mix.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Mixture//1257_441c0412_442c040j_0.mix.ct.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Mixture//1257_441c0412_442c040j_1.mix.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Mixture//1257_441c0412_442c040j_1.mix.ct.png" controls></img></td>
+        <td style="text-align: center">15.0 (ref: close-talk speech)</td>
+        <td style="text-align: center">7.8 (ref: close-talk speech)</td>
+    </tr>
+    <tr>
+        <td>Close-Talk Clean Speaker Image</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Clean_Speaker_Image//1257_441c0412_442c040j_0.cln.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Clean_Speaker_Image//1257_441c0412_442c040j_0.cln.ct.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Clean_Speaker_Image//1257_441c0412_442c040j_1.cln.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Clean_Speaker_Image//1257_441c0412_442c040j_1.cln.ct.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID: <strong>279_445c040l_444c0408</strong></td>
+    <td style="text-align: center">Spk 1</td>
+    <td style="text-align: center">Log Mag. of Spk 1</td>
+    <td style="text-align: center">Spk 2</td>
+    <td style="text-align: center">Log Mag. of Spk 2</td>
+    <td style="text-align: center">SDR (dB) of Spk 1</td>
+    <td style="text-align: center">SDR (dB) of Spk 2</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Far-Field Mixture (row 0)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Mixture//279_445c040l_444c0408.mix.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Mixture//279_445c040l_444c0408.mix.ff.png" controls></img></td>
+        <td></td>
+        <td></td>
+        <td style="text-align: center">0.1</td>
+        <td style="text-align: center">0.0</td>
+    </tr>
+    <tr>
+        <td>M2M (row 1a)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//M2M//279_445c040l_444c0408_0.est.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//M2M//279_445c040l_444c0408_0.est.ff.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//M2M//279_445c040l_444c0408_1.est.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//M2M//279_445c040l_444c0408_1.est.ff.png" controls></img></td>
+        <td style="text-align: center">23.3</td>
+        <td style="text-align: center">23.1</td>
+    </tr>
+    <tr>
+        <td>UNSSOR (row 4a)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//UNSSOR//279_445c040l_444c0408_0.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//UNSSOR//279_445c040l_444c0408_0.est.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//UNSSOR//279_445c040l_444c0408_1.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//UNSSOR//279_445c040l_444c0408_1.est.png" controls></img></td>
+        <td style="text-align: center">19.7</td>
+        <td style="text-align: center">20.1</td>
+    </tr>
+    <tr>
+        <td>PIT (row 4b)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//PIT//279_445c040l_444c0408_0.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//PIT//279_445c040l_444c0408_0.est.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//PIT//279_445c040l_444c0408_1.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//PIT//279_445c040l_444c0408_1.est.png" controls></img></td>
+        <td style="text-align: center">26.1</td>
+        <td style="text-align: center">25.3</td>
+    </tr>
+    <tr>
+        <td>Far-Field Clean Speaker Image</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Clean_Speaker_Images//279_445c040l_444c0408_0.cln.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Clean_Speaker_Images//279_445c040l_444c0408_0.cln.ff.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Clean_Speaker_Images//279_445c040l_444c0408_1.cln.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Clean_Speaker_Images//279_445c040l_444c0408_1.cln.ff.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+        <td>Close-Talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Mixture//279_445c040l_444c0408_0.mix.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Mixture//279_445c040l_444c0408_0.mix.ct.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Mixture//279_445c040l_444c0408_1.mix.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Mixture//279_445c040l_444c0408_1.mix.ct.png" controls></img></td>
+        <td style="text-align: center">18.1 (ref: close-talk speech)</td>
+        <td style="text-align: center">19.6 (ref: close-talk speech)</td>
+    </tr>
+    <tr>
+        <td>Close-Talk Clean Speaker Image</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Clean_Speaker_Image//279_445c040l_444c0408_0.cln.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Clean_Speaker_Image//279_445c040l_444c0408_0.cln.ct.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Clean_Speaker_Image//279_445c040l_444c0408_1.cln.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Clean_Speaker_Image//279_445c040l_444c0408_1.cln.ct.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID: <strong>442_440c040i_442c0405</strong></td>
+    <td style="text-align: center">Spk 1</td>
+    <td style="text-align: center">Log Mag. of Spk 1</td>
+    <td style="text-align: center">Spk 2</td>
+    <td style="text-align: center">Log Mag. of Spk 2</td>
+    <td style="text-align: center">SDR (dB) of Spk 1</td>
+    <td style="text-align: center">SDR (dB) of Spk 2</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Far-Field Mixture (row 0)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Mixture//442_440c040i_442c0405.mix.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Mixture//442_440c040i_442c0405.mix.ff.png" controls></img></td>
+        <td></td>
+        <td></td>
+        <td style="text-align: center">-1.5</td>
+        <td style="text-align: center">1.4</td>
+    </tr>
+    <tr>
+        <td>M2M (row 1a)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//M2M//442_440c040i_442c0405_0.est.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//M2M//442_440c040i_442c0405_0.est.ff.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//M2M//442_440c040i_442c0405_1.est.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//M2M//442_440c040i_442c0405_1.est.ff.png" controls></img></td>
+        <td style="text-align: center">19.6</td>
+        <td style="text-align: center">20.8</td>
+    </tr>
+    <tr>
+        <td>UNSSOR (row 4a)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//UNSSOR//442_440c040i_442c0405_0.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//UNSSOR//442_440c040i_442c0405_0.est.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//UNSSOR//442_440c040i_442c0405_1.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//UNSSOR//442_440c040i_442c0405_1.est.png" controls></img></td>
+        <td style="text-align: center">15.9</td>
+        <td style="text-align: center">18.3</td>
+    </tr>
+    <tr>
+        <td>PIT (row 4b)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//PIT//442_440c040i_442c0405_0.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//PIT//442_440c040i_442c0405_0.est.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//PIT//442_440c040i_442c0405_1.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//PIT//442_440c040i_442c0405_1.est.png" controls></img></td>
+        <td style="text-align: center">21.4</td>
+        <td style="text-align: center">22.1</td>
+    </tr>
+    <tr>
+        <td>Far-Field Clean Speaker Image</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Clean_Speaker_Images//442_440c040i_442c0405_0.cln.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Clean_Speaker_Images//442_440c040i_442c0405_0.cln.ff.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Clean_Speaker_Images//442_440c040i_442c0405_1.cln.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Clean_Speaker_Images//442_440c040i_442c0405_1.cln.ff.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+        <td>Close-Talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Mixture//442_440c040i_442c0405_0.mix.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Mixture//442_440c040i_442c0405_0.mix.ct.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Mixture//442_440c040i_442c0405_1.mix.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Mixture//442_440c040i_442c0405_1.mix.ct.png" controls></img></td>
+        <td style="text-align: center">18.9 (ref: close-talk speech)</td>
+        <td style="text-align: center">17.4 (ref: close-talk speech)</td>
+    </tr>
+    <tr>
+        <td>Close-Talk Clean Speaker Image</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Clean_Speaker_Image//442_440c040i_442c0405_0.cln.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Clean_Speaker_Image//442_440c040i_442c0405_0.cln.ct.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Clean_Speaker_Image//442_440c040i_442c0405_1.cln.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Clean_Speaker_Image//442_440c040i_442c0405_1.cln.ct.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID: <strong>315_447c0404_442c040o</strong></td>
+    <td style="text-align: center">Spk 1</td>
+    <td style="text-align: center">Log Mag. of Spk 1</td>
+    <td style="text-align: center">Spk 2</td>
+    <td style="text-align: center">Log Mag. of Spk 2</td>
+    <td style="text-align: center">SDR (dB) of Spk 1</td>
+    <td style="text-align: center">SDR (dB) of Spk 2</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Far-Field Mixture (row 0)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Mixture//315_447c0404_442c040o.mix.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Mixture//315_447c0404_442c040o.mix.ff.png" controls></img></td>
+        <td></td>
+        <td></td>
+        <td style="text-align: center">-0.4</td>
+        <td style="text-align: center">0.3</td>
+    </tr>
+    <tr>
+        <td>M2M (row 1a)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//M2M//315_447c0404_442c040o_0.est.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//M2M//315_447c0404_442c040o_0.est.ff.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//M2M//315_447c0404_442c040o_1.est.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//M2M//315_447c0404_442c040o_1.est.ff.png" controls></img></td>
+        <td style="text-align: center">23.7</td>
+        <td style="text-align: center">22.6</td>
+    </tr>
+    <tr>
+        <td>UNSSOR (row 4a)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//UNSSOR//315_447c0404_442c040o_0.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//UNSSOR//315_447c0404_442c040o_0.est.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//UNSSOR//315_447c0404_442c040o_1.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//UNSSOR//315_447c0404_442c040o_1.est.png" controls></img></td>
+        <td style="text-align: center">20.5</td>
+        <td style="text-align: center">20.0</td>
+    </tr>
+    <tr>
+        <td>PIT (row 4b)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//PIT//315_447c0404_442c040o_0.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//PIT//315_447c0404_442c040o_0.est.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//PIT//315_447c0404_442c040o_1.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//PIT//315_447c0404_442c040o_1.est.png" controls></img></td>
+        <td style="text-align: center">26.3</td>
+        <td style="text-align: center">24.4</td>
+    </tr>
+    <tr>
+        <td>Far-Field Clean Speaker Image</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Clean_Speaker_Images//315_447c0404_442c040o_0.cln.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Clean_Speaker_Images//315_447c0404_442c040o_0.cln.ff.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Clean_Speaker_Images//315_447c0404_442c040o_1.cln.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Clean_Speaker_Images//315_447c0404_442c040o_1.cln.ff.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+        <td>Close-Talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Mixture//315_447c0404_442c040o_0.mix.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Mixture//315_447c0404_442c040o_0.mix.ct.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Mixture//315_447c0404_442c040o_1.mix.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Mixture//315_447c0404_442c040o_1.mix.ct.png" controls></img></td>
+        <td style="text-align: center">17.7 (ref: close-talk speech)</td>
+        <td style="text-align: center">24.3 (ref: close-talk speech)</td>
+    </tr>
+    <tr>
+        <td>Close-Talk Clean Speaker Image</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Clean_Speaker_Image//315_447c0404_442c040o_0.cln.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Clean_Speaker_Image//315_447c0404_442c040o_0.cln.ct.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Clean_Speaker_Image//315_447c0404_442c040o_1.cln.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Clean_Speaker_Image//315_447c0404_442c040o_1.cln.ct.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID: <strong>158_440c040e_442c040k</strong></td>
+    <td style="text-align: center">Spk 1</td>
+    <td style="text-align: center">Log Mag. of Spk 1</td>
+    <td style="text-align: center">Spk 2</td>
+    <td style="text-align: center">Log Mag. of Spk 2</td>
+    <td style="text-align: center">SDR (dB) of Spk 1</td>
+    <td style="text-align: center">SDR (dB) of Spk 2</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Far-Field Mixture (row 0)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Mixture//158_440c040e_442c040k.mix.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Mixture//158_440c040e_442c040k.mix.ff.png" controls></img></td>
+        <td></td>
+        <td></td>
+        <td style="text-align: center">0.5</td>
+        <td style="text-align: center">-0.5</td>
+    </tr>
+    <tr>
+        <td>M2M (row 1a)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//M2M//158_440c040e_442c040k_0.est.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//M2M//158_440c040e_442c040k_0.est.ff.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//M2M//158_440c040e_442c040k_1.est.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//M2M//158_440c040e_442c040k_1.est.ff.png" controls></img></td>
+        <td style="text-align: center">20.1</td>
+        <td style="text-align: center">19.6</td>
+    </tr>
+    <tr>
+        <td>UNSSOR (row 4a)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//UNSSOR//158_440c040e_442c040k_0.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//UNSSOR//158_440c040e_442c040k_0.est.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//UNSSOR//158_440c040e_442c040k_1.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//UNSSOR//158_440c040e_442c040k_1.est.png" controls></img></td>
+        <td style="text-align: center">18.1</td>
+        <td style="text-align: center">17.4</td>
+    </tr>
+    <tr>
+        <td>PIT (row 4b)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//PIT//158_440c040e_442c040k_0.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//PIT//158_440c040e_442c040k_0.est.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//PIT//158_440c040e_442c040k_1.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//PIT//158_440c040e_442c040k_1.est.png" controls></img></td>
+        <td style="text-align: center">21.5</td>
+        <td style="text-align: center">21.1</td>
+    </tr>
+    <tr>
+        <td>Far-Field Clean Speaker Image</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Clean_Speaker_Images//158_440c040e_442c040k_0.cln.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Clean_Speaker_Images//158_440c040e_442c040k_0.cln.ff.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Clean_Speaker_Images//158_440c040e_442c040k_1.cln.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Clean_Speaker_Images//158_440c040e_442c040k_1.cln.ff.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+        <td>Close-Talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Mixture//158_440c040e_442c040k_0.mix.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Mixture//158_440c040e_442c040k_0.mix.ct.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Mixture//158_440c040e_442c040k_1.mix.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Mixture//158_440c040e_442c040k_1.mix.ct.png" controls></img></td>
+        <td style="text-align: center">19.9 (ref: close-talk speech)</td>
+        <td style="text-align: center">24.1 (ref: close-talk speech)</td>
+    </tr>
+    <tr>
+        <td>Close-Talk Clean Speaker Image</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Clean_Speaker_Image//158_440c040e_442c040k_0.cln.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Clean_Speaker_Image//158_440c040e_442c040k_0.cln.ct.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Clean_Speaker_Image//158_440c040e_442c040k_1.cln.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Clean_Speaker_Image//158_440c040e_442c040k_1.cln.ct.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID: <strong>39_443c040s_444c040o</strong></td>
+    <td style="text-align: center">Spk 1</td>
+    <td style="text-align: center">Log Mag. of Spk 1</td>
+    <td style="text-align: center">Spk 2</td>
+    <td style="text-align: center">Log Mag. of Spk 2</td>
+    <td style="text-align: center">SDR (dB) of Spk 1</td>
+    <td style="text-align: center">SDR (dB) of Spk 2</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Far-Field Mixture (row 0)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Mixture//39_443c040s_444c040o.mix.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Mixture//39_443c040s_444c040o.mix.ff.png" controls></img></td>
+        <td></td>
+        <td></td>
+        <td style="text-align: center">0.2</td>
+        <td style="text-align: center">-0.0</td>
+    </tr>
+    <tr>
+        <td>M2M (row 1a)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//M2M//39_443c040s_444c040o_0.est.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//M2M//39_443c040s_444c040o_0.est.ff.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//M2M//39_443c040s_444c040o_1.est.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//M2M//39_443c040s_444c040o_1.est.ff.png" controls></img></td>
+        <td style="text-align: center">18.0</td>
+        <td style="text-align: center">18.0</td>
+    </tr>
+    <tr>
+        <td>UNSSOR (row 4a)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//UNSSOR//39_443c040s_444c040o_0.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//UNSSOR//39_443c040s_444c040o_0.est.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//UNSSOR//39_443c040s_444c040o_1.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//UNSSOR//39_443c040s_444c040o_1.est.png" controls></img></td>
+        <td style="text-align: center">16.6</td>
+        <td style="text-align: center">16.6</td>
+    </tr>
+    <tr>
+        <td>PIT (row 4b)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//PIT//39_443c040s_444c040o_0.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//PIT//39_443c040s_444c040o_0.est.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//PIT//39_443c040s_444c040o_1.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//PIT//39_443c040s_444c040o_1.est.png" controls></img></td>
+        <td style="text-align: center">18.8</td>
+        <td style="text-align: center">19.1</td>
+    </tr>
+    <tr>
+        <td>Far-Field Clean Speaker Image</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Clean_Speaker_Images//39_443c040s_444c040o_0.cln.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Clean_Speaker_Images//39_443c040s_444c040o_0.cln.ff.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Clean_Speaker_Images//39_443c040s_444c040o_1.cln.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Clean_Speaker_Images//39_443c040s_444c040o_1.cln.ff.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+        <td>Close-Talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Mixture//39_443c040s_444c040o_0.mix.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Mixture//39_443c040s_444c040o_0.mix.ct.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Mixture//39_443c040s_444c040o_1.mix.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Mixture//39_443c040s_444c040o_1.mix.ct.png" controls></img></td>
+        <td style="text-align: center">19.9 (ref: close-talk speech)</td>
+        <td style="text-align: center">13.1 (ref: close-talk speech)</td>
+    </tr>
+    <tr>
+        <td>Close-Talk Clean Speaker Image</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Clean_Speaker_Image//39_443c040s_444c040o_0.cln.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Clean_Speaker_Image//39_443c040s_444c040o_0.cln.ct.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Clean_Speaker_Image//39_443c040s_444c040o_1.cln.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Clean_Speaker_Image//39_443c040s_444c040o_1.cln.ct.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID: <strong>281_447c040c_445c0402</strong></td>
+    <td style="text-align: center">Spk 1</td>
+    <td style="text-align: center">Log Mag. of Spk 1</td>
+    <td style="text-align: center">Spk 2</td>
+    <td style="text-align: center">Log Mag. of Spk 2</td>
+    <td style="text-align: center">SDR (dB) of Spk 1</td>
+    <td style="text-align: center">SDR (dB) of Spk 2</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Far-Field Mixture (row 0)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Mixture//281_447c040c_445c0402.mix.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Mixture//281_447c040c_445c0402.mix.ff.png" controls></img></td>
+        <td></td>
+        <td></td>
+        <td style="text-align: center">-0.5</td>
+        <td style="text-align: center">0.4</td>
+    </tr>
+    <tr>
+        <td>M2M (row 1a)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//M2M//281_447c040c_445c0402_0.est.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//M2M//281_447c040c_445c0402_0.est.ff.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//M2M//281_447c040c_445c0402_1.est.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//M2M//281_447c040c_445c0402_1.est.ff.png" controls></img></td>
+        <td style="text-align: center">13.6</td>
+        <td style="text-align: center">14.2</td>
+    </tr>
+    <tr>
+        <td>UNSSOR (row 4a)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//UNSSOR//281_447c040c_445c0402_0.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//UNSSOR//281_447c040c_445c0402_0.est.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//UNSSOR//281_447c040c_445c0402_1.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//UNSSOR//281_447c040c_445c0402_1.est.png" controls></img></td>
+        <td style="text-align: center">10.2</td>
+        <td style="text-align: center">9.5</td>
+    </tr>
+    <tr>
+        <td>PIT (row 4b)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//PIT//281_447c040c_445c0402_0.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//PIT//281_447c040c_445c0402_0.est.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//PIT//281_447c040c_445c0402_1.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//PIT//281_447c040c_445c0402_1.est.png" controls></img></td>
+        <td style="text-align: center">15.4</td>
+        <td style="text-align: center">15.9</td>
+    </tr>
+    <tr>
+        <td>Far-Field Clean Speaker Image</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Clean_Speaker_Images//281_447c040c_445c0402_0.cln.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Clean_Speaker_Images//281_447c040c_445c0402_0.cln.ff.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Clean_Speaker_Images//281_447c040c_445c0402_1.cln.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Clean_Speaker_Images//281_447c040c_445c0402_1.cln.ff.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+        <td>Close-Talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Mixture//281_447c040c_445c0402_0.mix.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Mixture//281_447c040c_445c0402_0.mix.ct.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Mixture//281_447c040c_445c0402_1.mix.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Mixture//281_447c040c_445c0402_1.mix.ct.png" controls></img></td>
+        <td style="text-align: center">7.1 (ref: close-talk speech)</td>
+        <td style="text-align: center">8.0 (ref: close-talk speech)</td>
+    </tr>
+    <tr>
+        <td>Close-Talk Clean Speaker Image</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Clean_Speaker_Image//281_447c040c_445c0402_0.cln.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Clean_Speaker_Image//281_447c040c_445c0402_0.cln.ct.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Clean_Speaker_Image//281_447c040c_445c0402_1.cln.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Clean_Speaker_Image//281_447c040c_445c0402_1.cln.ct.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID: <strong>176_440c0416_442c040l</strong></td>
+    <td style="text-align: center">Spk 1</td>
+    <td style="text-align: center">Log Mag. of Spk 1</td>
+    <td style="text-align: center">Spk 2</td>
+    <td style="text-align: center">Log Mag. of Spk 2</td>
+    <td style="text-align: center">SDR (dB) of Spk 1</td>
+    <td style="text-align: center">SDR (dB) of Spk 2</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Far-Field Mixture (row 0)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Mixture//176_440c0416_442c040l.mix.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Mixture//176_440c0416_442c040l.mix.ff.png" controls></img></td>
+        <td></td>
+        <td></td>
+        <td style="text-align: center">-1.0</td>
+        <td style="text-align: center">0.9</td>
+    </tr>
+    <tr>
+        <td>M2M (row 1a)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//M2M//176_440c0416_442c040l_0.est.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//M2M//176_440c0416_442c040l_0.est.ff.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//M2M//176_440c0416_442c040l_1.est.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//M2M//176_440c0416_442c040l_1.est.ff.png" controls></img></td>
+        <td style="text-align: center">11.1</td>
+        <td style="text-align: center">12.3</td>
+    </tr>
+    <tr>
+        <td>UNSSOR (row 4a)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//UNSSOR//176_440c0416_442c040l_0.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//UNSSOR//176_440c0416_442c040l_0.est.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//UNSSOR//176_440c0416_442c040l_1.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//UNSSOR//176_440c0416_442c040l_1.est.png" controls></img></td>
+        <td style="text-align: center">6.0</td>
+        <td style="text-align: center">8.5</td>
+    </tr>
+    <tr>
+        <td>PIT (row 4b)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//PIT//176_440c0416_442c040l_0.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//PIT//176_440c0416_442c040l_0.est.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//PIT//176_440c0416_442c040l_1.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//PIT//176_440c0416_442c040l_1.est.png" controls></img></td>
+        <td style="text-align: center">11.7</td>
+        <td style="text-align: center">13.1</td>
+    </tr>
+    <tr>
+        <td>Far-Field Clean Speaker Image</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Clean_Speaker_Images//176_440c0416_442c040l_0.cln.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Clean_Speaker_Images//176_440c0416_442c040l_0.cln.ff.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Clean_Speaker_Images//176_440c0416_442c040l_1.cln.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Clean_Speaker_Images//176_440c0416_442c040l_1.cln.ff.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+        <td>Close-Talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Mixture//176_440c0416_442c040l_0.mix.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Mixture//176_440c0416_442c040l_0.mix.ct.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Mixture//176_440c0416_442c040l_1.mix.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Mixture//176_440c0416_442c040l_1.mix.ct.png" controls></img></td>
+        <td style="text-align: center">2.8 (ref: close-talk speech)</td>
+        <td style="text-align: center">8.6 (ref: close-talk speech)</td>
+    </tr>
+    <tr>
+        <td>Close-Talk Clean Speaker Image</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Clean_Speaker_Image//176_440c0416_442c040l_0.cln.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Clean_Speaker_Image//176_440c0416_442c040l_0.cln.ct.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Clean_Speaker_Image//176_440c0416_442c040l_1.cln.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Clean_Speaker_Image//176_440c0416_442c040l_1.cln.ct.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID: <strong>948_444c0403_446c040r</strong></td>
+    <td style="text-align: center">Spk 1</td>
+    <td style="text-align: center">Log Mag. of Spk 1</td>
+    <td style="text-align: center">Spk 2</td>
+    <td style="text-align: center">Log Mag. of Spk 2</td>
+    <td style="text-align: center">SDR (dB) of Spk 1</td>
+    <td style="text-align: center">SDR (dB) of Spk 2</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Far-Field Mixture (row 0)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Mixture//948_444c0403_446c040r.mix.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Mixture//948_444c0403_446c040r.mix.ff.png" controls></img></td>
+        <td></td>
+        <td></td>
+        <td style="text-align: center">-1.4</td>
+        <td style="text-align: center">1.4</td>
+    </tr>
+    <tr>
+        <td>M2M (row 1a)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//M2M//948_444c0403_446c040r_0.est.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//M2M//948_444c0403_446c040r_0.est.ff.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//M2M//948_444c0403_446c040r_1.est.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//M2M//948_444c0403_446c040r_1.est.ff.png" controls></img></td>
+        <td style="text-align: center">18.7</td>
+        <td style="text-align: center">21.6</td>
+    </tr>
+    <tr>
+        <td>UNSSOR (row 4a)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//UNSSOR//948_444c0403_446c040r_0.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//UNSSOR//948_444c0403_446c040r_0.est.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//UNSSOR//948_444c0403_446c040r_1.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//UNSSOR//948_444c0403_446c040r_1.est.png" controls></img></td>
+        <td style="text-align: center">16.6</td>
+        <td style="text-align: center">18.6</td>
+    </tr>
+    <tr>
+        <td>PIT (row 4b)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//PIT//948_444c0403_446c040r_0.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//PIT//948_444c0403_446c040r_0.est.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//PIT//948_444c0403_446c040r_1.est.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//PIT//948_444c0403_446c040r_1.est.png" controls></img></td>
+        <td style="text-align: center">21.2</td>
+        <td style="text-align: center">23.5</td>
+    </tr>
+    <tr>
+        <td>Far-Field Clean Speaker Image</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Clean_Speaker_Images//948_444c0403_446c040r_0.cln.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Clean_Speaker_Images//948_444c0403_446c040r_0.cln.ff.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//FF_Clean_Speaker_Images//948_444c0403_446c040r_1.cln.ff.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//FF_Clean_Speaker_Images//948_444c0403_446c040r_1.cln.ff.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+        <td>Close-Talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Mixture//948_444c0403_446c040r_0.mix.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Mixture//948_444c0403_446c040r_0.mix.ct.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Mixture//948_444c0403_446c040r_1.mix.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Mixture//948_444c0403_446c040r_1.mix.ct.png" controls></img></td>
+        <td style="text-align: center">18.4 (ref: close-talk speech)</td>
+        <td style="text-align: center">25.0 (ref: close-talk speech)</td>
+    </tr>
+    <tr>
+        <td>Close-Talk Clean Speaker Image</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Clean_Speaker_Image//948_444c0403_446c040r_0.cln.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Clean_Speaker_Image//948_444c0403_446c040r_0.cln.ct.png" controls></img></td>
+        <td><audio style="width: 250px;" src="./demo_wavs//CT_Clean_Speaker_Image//948_444c0403_446c040r_1.cln.ct.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//CT_Clean_Speaker_Image//948_444c0403_446c040r_1.cln.ct.png" controls></img></td>
+        <td style="text-align: center">-</td>
+        <td style="text-align: center">-</td>
+    </tr>
+</tr>
+</table>
+</body>
+</html>

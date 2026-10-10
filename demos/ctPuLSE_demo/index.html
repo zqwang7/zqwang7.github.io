@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 align="center"><strong>Sound Demo of ctPuLSE on CHiME-4 Corpus</strong></h1>
+<br>
+<p>This webpage provides a sound demo on the test set of the CHiME-4 corpus. For technical details, please refer to the following paper:</p><blockquote>Z.-Q. Wang, "<i>ctPuLSE: Close-Talk, and Pseudo-Label Based Far-Field, Speech Enhancement</i>", in submission, 2024.</blockquote>
+<br>
+This demo presents the enhancement results of 10 randomly-selected test signals.
+<br>
+1. <a href="#six_channel_input">10 randomly-selected test signals in 6-channel input cases</a> (click to jump to the section)
+<br>
+2. <a href="#two_channel_input">10 randomly-selected test signals in 2-channel input cases</a> (click to jump to the section)
+<br>
+3. <a href="#monaural_input">10 randomly-selected test signals in 1-channel input cases</a> (click to jump to the section)
+<br>
+Firefox is recommended.
+<br>
+<hr color="#0ABAB5"; size="5"><td><h2 id="six_channel_input">Six-Channel Input</h2></td>
+<table style="width:95%">
+<tr>
+    <tr>
+    <td>Utterance ID=F05_447C020T_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/Mixture//F05_447C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/Mixture//F05_447C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/Supervised//F05_447C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/Supervised//F05_447C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/SuperM2M//F05_447C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/SuperM2M//F05_447C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/ctPuLSE//F05_447C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/ctPuLSE//F05_447C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/closetalk_mixture//F05_447C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/closetalk_mixture//F05_447C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/est_closetalk_speech//F05_447C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/est_closetalk_speech//F05_447C020T_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F05_447C020H_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/Mixture//F05_447C020H_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/Mixture//F05_447C020H_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/Supervised//F05_447C020H_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/Supervised//F05_447C020H_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/SuperM2M//F05_447C020H_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/SuperM2M//F05_447C020H_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/ctPuLSE//F05_447C020H_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/ctPuLSE//F05_447C020H_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/closetalk_mixture//F05_447C020H_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/closetalk_mixture//F05_447C020H_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/est_closetalk_speech//F05_447C020H_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/est_closetalk_speech//F05_447C020H_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F05_447C020M_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/Mixture//F05_447C020M_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/Mixture//F05_447C020M_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/Supervised//F05_447C020M_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/Supervised//F05_447C020M_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/SuperM2M//F05_447C020M_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/SuperM2M//F05_447C020M_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/ctPuLSE//F05_447C020M_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/ctPuLSE//F05_447C020M_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/closetalk_mixture//F05_447C020M_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/closetalk_mixture//F05_447C020M_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/est_closetalk_speech//F05_447C020M_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/est_closetalk_speech//F05_447C020M_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F05_446C020T_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/Mixture//F05_446C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/Mixture//F05_446C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/Supervised//F05_446C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/Supervised//F05_446C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/SuperM2M//F05_446C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/SuperM2M//F05_446C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/ctPuLSE//F05_446C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/ctPuLSE//F05_446C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/closetalk_mixture//F05_446C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/closetalk_mixture//F05_446C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/est_closetalk_speech//F05_446C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/est_closetalk_speech//F05_446C020T_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F05_443C0205_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/Mixture//F05_443C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/Mixture//F05_443C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/Supervised//F05_443C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/Supervised//F05_443C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/SuperM2M//F05_443C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/SuperM2M//F05_443C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/ctPuLSE//F05_443C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/ctPuLSE//F05_443C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/closetalk_mixture//F05_443C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/closetalk_mixture//F05_443C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/est_closetalk_speech//F05_443C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/est_closetalk_speech//F05_443C0205_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F06_447C0202_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/Mixture//F06_447C0202_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/Mixture//F06_447C0202_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/Supervised//F06_447C0202_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/Supervised//F06_447C0202_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/SuperM2M//F06_447C0202_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/SuperM2M//F06_447C0202_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/ctPuLSE//F06_447C0202_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/ctPuLSE//F06_447C0202_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/closetalk_mixture//F06_447C0202_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/closetalk_mixture//F06_447C0202_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/est_closetalk_speech//F06_447C0202_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/est_closetalk_speech//F06_447C0202_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F06_447C0205_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/Mixture//F06_447C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/Mixture//F06_447C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/Supervised//F06_447C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/Supervised//F06_447C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/SuperM2M//F06_447C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/SuperM2M//F06_447C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/ctPuLSE//F06_447C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/ctPuLSE//F06_447C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/closetalk_mixture//F06_447C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/closetalk_mixture//F06_447C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/est_closetalk_speech//F06_447C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/est_closetalk_speech//F06_447C0205_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F06_446C020Z_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/Mixture//F06_446C020Z_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/Mixture//F06_446C020Z_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/Supervised//F06_446C020Z_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/Supervised//F06_446C020Z_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/SuperM2M//F06_446C020Z_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/SuperM2M//F06_446C020Z_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/ctPuLSE//F06_446C020Z_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/ctPuLSE//F06_446C020Z_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/closetalk_mixture//F06_446C020Z_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/closetalk_mixture//F06_446C020Z_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/est_closetalk_speech//F06_446C020Z_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/est_closetalk_speech//F06_446C020Z_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F06_446C020J_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/Mixture//F06_446C020J_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/Mixture//F06_446C020J_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/Supervised//F06_446C020J_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/Supervised//F06_446C020J_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/SuperM2M//F06_446C020J_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/SuperM2M//F06_446C020J_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/ctPuLSE//F06_446C020J_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/ctPuLSE//F06_446C020J_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/closetalk_mixture//F06_446C020J_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/closetalk_mixture//F06_446C020J_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/est_closetalk_speech//F06_446C020J_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/est_closetalk_speech//F06_446C020J_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F06_445C020B_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/Mixture//F06_445C020B_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/Mixture//F06_445C020B_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/Supervised//F06_445C020B_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/Supervised//F06_445C020B_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/SuperM2M//F06_445C020B_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/SuperM2M//F06_445C020B_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 6ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/ctPuLSE//F06_445C020B_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/ctPuLSE//F06_445C020B_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/closetalk_mixture//F06_445C020B_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/closetalk_mixture//F06_445C020B_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//6ch/est_closetalk_speech//F06_445C020B_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//6ch/est_closetalk_speech//F06_445C020B_BUS.png" controls></img></td>
+    </tr>
+</tr>
+</table>
+<hr color="#0ABAB5"; size="5"><td><h2 id="two_channel_input">Two-Channel Input</h2></td>
+<table style="width:95%">
+<tr>
+    <tr>
+    <td>Utterance ID=F05_447C020T_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/Mixture//F05_447C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/Mixture//F05_447C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/Supervised//F05_447C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/Supervised//F05_447C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/SuperM2M//F05_447C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/SuperM2M//F05_447C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/ctPuLSE//F05_447C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/ctPuLSE//F05_447C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/closetalk_mixture//F05_447C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/closetalk_mixture//F05_447C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/est_closetalk_speech//F05_447C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/est_closetalk_speech//F05_447C020T_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F05_447C020H_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/Mixture//F05_447C020H_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/Mixture//F05_447C020H_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/Supervised//F05_447C020H_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/Supervised//F05_447C020H_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/SuperM2M//F05_447C020H_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/SuperM2M//F05_447C020H_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/ctPuLSE//F05_447C020H_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/ctPuLSE//F05_447C020H_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/closetalk_mixture//F05_447C020H_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/closetalk_mixture//F05_447C020H_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/est_closetalk_speech//F05_447C020H_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/est_closetalk_speech//F05_447C020H_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F05_447C020M_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/Mixture//F05_447C020M_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/Mixture//F05_447C020M_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/Supervised//F05_447C020M_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/Supervised//F05_447C020M_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/SuperM2M//F05_447C020M_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/SuperM2M//F05_447C020M_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/ctPuLSE//F05_447C020M_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/ctPuLSE//F05_447C020M_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/closetalk_mixture//F05_447C020M_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/closetalk_mixture//F05_447C020M_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/est_closetalk_speech//F05_447C020M_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/est_closetalk_speech//F05_447C020M_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F05_446C020T_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/Mixture//F05_446C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/Mixture//F05_446C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/Supervised//F05_446C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/Supervised//F05_446C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/SuperM2M//F05_446C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/SuperM2M//F05_446C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/ctPuLSE//F05_446C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/ctPuLSE//F05_446C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/closetalk_mixture//F05_446C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/closetalk_mixture//F05_446C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/est_closetalk_speech//F05_446C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/est_closetalk_speech//F05_446C020T_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F05_443C0205_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/Mixture//F05_443C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/Mixture//F05_443C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/Supervised//F05_443C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/Supervised//F05_443C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/SuperM2M//F05_443C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/SuperM2M//F05_443C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/ctPuLSE//F05_443C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/ctPuLSE//F05_443C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/closetalk_mixture//F05_443C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/closetalk_mixture//F05_443C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/est_closetalk_speech//F05_443C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/est_closetalk_speech//F05_443C0205_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F06_447C0202_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/Mixture//F06_447C0202_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/Mixture//F06_447C0202_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/Supervised//F06_447C0202_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/Supervised//F06_447C0202_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/SuperM2M//F06_447C0202_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/SuperM2M//F06_447C0202_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/ctPuLSE//F06_447C0202_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/ctPuLSE//F06_447C0202_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/closetalk_mixture//F06_447C0202_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/closetalk_mixture//F06_447C0202_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/est_closetalk_speech//F06_447C0202_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/est_closetalk_speech//F06_447C0202_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F06_447C0205_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/Mixture//F06_447C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/Mixture//F06_447C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/Supervised//F06_447C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/Supervised//F06_447C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/SuperM2M//F06_447C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/SuperM2M//F06_447C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/ctPuLSE//F06_447C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/ctPuLSE//F06_447C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/closetalk_mixture//F06_447C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/closetalk_mixture//F06_447C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/est_closetalk_speech//F06_447C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/est_closetalk_speech//F06_447C0205_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F06_446C020Z_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/Mixture//F06_446C020Z_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/Mixture//F06_446C020Z_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/Supervised//F06_446C020Z_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/Supervised//F06_446C020Z_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/SuperM2M//F06_446C020Z_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/SuperM2M//F06_446C020Z_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/ctPuLSE//F06_446C020Z_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/ctPuLSE//F06_446C020Z_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/closetalk_mixture//F06_446C020Z_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/closetalk_mixture//F06_446C020Z_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/est_closetalk_speech//F06_446C020Z_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/est_closetalk_speech//F06_446C020Z_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F06_446C020J_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/Mixture//F06_446C020J_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/Mixture//F06_446C020J_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/Supervised//F06_446C020J_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/Supervised//F06_446C020J_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/SuperM2M//F06_446C020J_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/SuperM2M//F06_446C020J_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/ctPuLSE//F06_446C020J_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/ctPuLSE//F06_446C020J_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/closetalk_mixture//F06_446C020J_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/closetalk_mixture//F06_446C020J_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/est_closetalk_speech//F06_446C020J_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/est_closetalk_speech//F06_446C020J_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F06_445C020B_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/Mixture//F06_445C020B_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/Mixture//F06_445C020B_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/Supervised//F06_445C020B_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/Supervised//F06_445C020B_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/SuperM2M//F06_445C020B_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/SuperM2M//F06_445C020B_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 2ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/ctPuLSE//F06_445C020B_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/ctPuLSE//F06_445C020B_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/closetalk_mixture//F06_445C020B_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/closetalk_mixture//F06_445C020B_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//2ch/est_closetalk_speech//F06_445C020B_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//2ch/est_closetalk_speech//F06_445C020B_BUS.png" controls></img></td>
+    </tr>
+</tr>
+</table>
+<hr color="#0ABAB5"; size="5"><td><h2 id="monaural_input">Monaural Input</h2></td>
+<table style="width:95%">
+<tr>
+    <tr>
+    <td>Utterance ID=F05_447C020T_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/Mixture//F05_447C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/Mixture//F05_447C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/Supervised//F05_447C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/Supervised//F05_447C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/SuperM2M//F05_447C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/SuperM2M//F05_447C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/ctPuLSE//F05_447C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/ctPuLSE//F05_447C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/closetalk_mixture//F05_447C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/closetalk_mixture//F05_447C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/est_closetalk_speech//F05_447C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/est_closetalk_speech//F05_447C020T_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F05_447C020H_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/Mixture//F05_447C020H_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/Mixture//F05_447C020H_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/Supervised//F05_447C020H_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/Supervised//F05_447C020H_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/SuperM2M//F05_447C020H_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/SuperM2M//F05_447C020H_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/ctPuLSE//F05_447C020H_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/ctPuLSE//F05_447C020H_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/closetalk_mixture//F05_447C020H_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/closetalk_mixture//F05_447C020H_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/est_closetalk_speech//F05_447C020H_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/est_closetalk_speech//F05_447C020H_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F05_447C020M_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/Mixture//F05_447C020M_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/Mixture//F05_447C020M_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/Supervised//F05_447C020M_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/Supervised//F05_447C020M_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/SuperM2M//F05_447C020M_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/SuperM2M//F05_447C020M_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/ctPuLSE//F05_447C020M_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/ctPuLSE//F05_447C020M_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/closetalk_mixture//F05_447C020M_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/closetalk_mixture//F05_447C020M_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/est_closetalk_speech//F05_447C020M_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/est_closetalk_speech//F05_447C020M_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F05_446C020T_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/Mixture//F05_446C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/Mixture//F05_446C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/Supervised//F05_446C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/Supervised//F05_446C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/SuperM2M//F05_446C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/SuperM2M//F05_446C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/ctPuLSE//F05_446C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/ctPuLSE//F05_446C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/closetalk_mixture//F05_446C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/closetalk_mixture//F05_446C020T_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/est_closetalk_speech//F05_446C020T_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/est_closetalk_speech//F05_446C020T_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F05_443C0205_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/Mixture//F05_443C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/Mixture//F05_443C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/Supervised//F05_443C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/Supervised//F05_443C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/SuperM2M//F05_443C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/SuperM2M//F05_443C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/ctPuLSE//F05_443C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/ctPuLSE//F05_443C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/closetalk_mixture//F05_443C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/closetalk_mixture//F05_443C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/est_closetalk_speech//F05_443C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/est_closetalk_speech//F05_443C0205_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F06_447C0202_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/Mixture//F06_447C0202_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/Mixture//F06_447C0202_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/Supervised//F06_447C0202_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/Supervised//F06_447C0202_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/SuperM2M//F06_447C0202_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/SuperM2M//F06_447C0202_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/ctPuLSE//F06_447C0202_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/ctPuLSE//F06_447C0202_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/closetalk_mixture//F06_447C0202_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/closetalk_mixture//F06_447C0202_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/est_closetalk_speech//F06_447C0202_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/est_closetalk_speech//F06_447C0202_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F06_447C0205_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/Mixture//F06_447C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/Mixture//F06_447C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/Supervised//F06_447C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/Supervised//F06_447C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/SuperM2M//F06_447C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/SuperM2M//F06_447C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/ctPuLSE//F06_447C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/ctPuLSE//F06_447C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/closetalk_mixture//F06_447C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/closetalk_mixture//F06_447C0205_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/est_closetalk_speech//F06_447C0205_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/est_closetalk_speech//F06_447C0205_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F06_446C020Z_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/Mixture//F06_446C020Z_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/Mixture//F06_446C020Z_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/Supervised//F06_446C020Z_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/Supervised//F06_446C020Z_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/SuperM2M//F06_446C020Z_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/SuperM2M//F06_446C020Z_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/ctPuLSE//F06_446C020Z_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/ctPuLSE//F06_446C020Z_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/closetalk_mixture//F06_446C020Z_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/closetalk_mixture//F06_446C020Z_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/est_closetalk_speech//F06_446C020Z_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/est_closetalk_speech//F06_446C020Z_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F06_446C020J_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/Mixture//F06_446C020J_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/Mixture//F06_446C020J_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/Supervised//F06_446C020J_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/Supervised//F06_446C020J_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/SuperM2M//F06_446C020J_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/SuperM2M//F06_446C020J_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/ctPuLSE//F06_446C020J_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/ctPuLSE//F06_446C020J_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/closetalk_mixture//F06_446C020J_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/closetalk_mixture//F06_446C020J_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/est_closetalk_speech//F06_446C020J_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/est_closetalk_speech//F06_446C020J_BUS.png" controls></img></td>
+    </tr>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+    <td><hr color="#000000"; size="3"></td>
+</tr>
+<tr>
+    <tr>
+    <td>Utterance ID=F06_445C020B_BUS</td>
+    <td style="text-align: left">Target Speaker</td>
+    <td style="text-align: left">Log-compreesed Power Spectrogram</td>
+    <td></td>
+    </tr>
+    <tr>
+        <td>Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/Mixture//F06_445C020B_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/Mixture//F06_445C020B_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Supervised 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/Supervised//F06_445C020B_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/Supervised//F06_445C020B_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>SuperM2M 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/SuperM2M//F06_445C020B_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/SuperM2M//F06_445C020B_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>ctPuLSE 1ch</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/ctPuLSE//F06_445C020B_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/ctPuLSE//F06_445C020B_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Close-talk Mixture</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/closetalk_mixture//F06_445C020B_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/closetalk_mixture//F06_445C020B_BUS.png" controls></img></td>
+    </tr>
+    <tr>
+        <td>Est. close-talk speech (CTSEnet)</td>
+        <td><audio style="width: 250px;" src="./demo_wavs//1ch/est_closetalk_speech//F06_445C020B_BUS.wav" controls></audio></td>
+        <td><img style="width: 700px;" src="./demo_wavs//1ch/est_closetalk_speech//F06_445C020B_BUS.png" controls></img></td>
+    </tr>
+</tr>
+</table>
+</body>
+</html>
